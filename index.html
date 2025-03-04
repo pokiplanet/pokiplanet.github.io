@@ -1,28 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>PokiPlanet</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PokiPlanet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: monospace;
+            background-image: url('pallet-town-night.webp');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(0.5px);
+            border: 2px solid white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            max-width: 42rem;
+            width: 100%;
+            padding: 2rem;
+        }
+
+        .card-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .pikachu-image {
+            width: 5rem;
+            height: 3.5rem;
+            margin-right: 1.5rem;
+            object-fit: cover;
+            overflow: visible;
+        }
+
+        .text-section {
+            flex-grow: 1;
+            border-left: 2px solid white;
+            padding-left: 1.5rem;
+        }
+
+        .text-section h1 {
+            color: white;
+            font-size: 1.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .text-section p {
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        .footer {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .footer p {
+            color: white;
+            font-size: 0.875rem;
+        }
+    </style>
 </head>
-<body class="bg-cover bg-center bg-[url('pallet-town-night.webp')] font-mono h-screen flex flex-col">
-    <div class="flex-1 flex items-center justify-center overflow-hidden">
-        <div class="max-w-2xl w-full px-8">
-            <div class="bg-white/20 backdrop-blur backdrop-blur-[0.5x] border-2 border-[rgba(89%2C86%2C114%2C255)] rounded-lg shadow-lg p-8">
-                <div class="flex items-center">
-                    <img src="pikachu.gif" alt="Player" class="w-20 h-14 mr-6 object-cover">
-                    <div class="flex-1 border-l-2 border-[rgba(89%2C86%2C114%2C255)] pl-6">
-                        <h1 class="text-3xl text-white mb-2">Coming Soon</h1>
-                        <p class="text-xl text-white">PokiPlanet is under construction</p>
-                    </div>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <img src="pikachu.gif" alt="Player" class="pikachu-image">
+                <div class="text-section">
+                    <h1>Coming Soon</h1>
+                    <p>PokiPlanet is under construction</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="p-4 text-center">
-        <p class="text-white text-sm font-mono">
-            © 2025 PokiPlanet. All rights reserved.
-        </p>
-    </div>
+    <footer class="footer">
+        <p>© 2025 PokiPlanet. All rights reserved.</p>
+    </footer>
 </body>
 </html>
