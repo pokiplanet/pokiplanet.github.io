@@ -1289,13 +1289,13 @@
       }
     });
 
-    ocument.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevents URL change
-      const targetId = this.getAttribute('href').substring(1); // Gets the ID from the href (e.g., "blog")
-      const targetElement = document.getElementById(targetId); // Finds the element with the ID
+      event.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' }); // Scrolls to the element smoothly
+        targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     });
   });
