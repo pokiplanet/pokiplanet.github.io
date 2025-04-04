@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on PokiPlanet Blog</title>
-    <link>http://localhost:1313/blog/tags/</link>
+    <link>https://pokiplanet.com/blog/tags/</link>
     <description>Recent content in Tags on PokiPlanet Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>ash@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>ash@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Mon, 24 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title> Mitsuhiro Arita</title>
-      <link>http://localhost:1313/blog/tags/-mitsuhiro-arita/</link>
+      <link>https://pokiplanet.com/blog/tags/-mitsuhiro-arita/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
       <author>ash@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>http://localhost:1313/blog/tags/-mitsuhiro-arita/</guid>
+      <guid>https://pokiplanet.com/blog/tags/-mitsuhiro-arita/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/blog/tags/ai/</link>
+      <link>https://pokiplanet.com/blog/tags/ai/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
       <author>ash@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>http://localhost:1313/blog/tags/ai/</guid>
+      <guid>https://pokiplanet.com/blog/tags/ai/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Charizard</title>
-      <link>http://localhost:1313/blog/tags/charizard/</link>
+      <link>https://pokiplanet.com/blog/tags/charizard/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
       <author>ash@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>http://localhost:1313/blog/tags/charizard/</guid>
+      <guid>https://pokiplanet.com/blog/tags/charizard/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Signature</title>
-      <link>http://localhost:1313/blog/tags/signature/</link>
+      <link>https://pokiplanet.com/blog/tags/signature/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
       <author>ash@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>http://localhost:1313/blog/tags/signature/</guid>
+      <guid>https://pokiplanet.com/blog/tags/signature/</guid>
       <description></description>
       
     </item>
