@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
-    <link rel="manifest" href="/blog/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="manifest" href="/ico/site.webmanifest">
     <title>Error 404</title>
     <style>
         body {
@@ -17,7 +17,7 @@
             height: 100vh;
             width: 100vw;
             font-family: monospace;
-            background-image: url('/assets/404/pallet-town-night.webp');
+            background-image: url('pallet-town-night.webp');
             background-size: cover;
             background-position: center;
             min-height: 100vh;
@@ -134,11 +134,10 @@
     <div class="content">
         <div class="card">
             <div class="card-content">
-                <img src="/assets/404/pikachu.gif" alt="Player" class="pikachu-image">
+                <img src="pikachu.gif" alt="Player" class="pikachu-image">
                 <div class="text-section">
                     <h1>Error 404</h1>
                     <p>Return to <a href="https://pokiplanet.com/">PokiPlanet</a></p>
-                    <p>Or the PokiPlanet <a href="https://pokiplanet.com/blog">Blog</a></p>
                 </div>
             </div>
         </div>
@@ -161,7 +160,7 @@
             const preloadedImages = [];
             for (let i = 1; i <= totalImages; i++) {
                 const img = new Image();
-                img.src = `/assets/404/bg/${i}.png`;
+                img.src = `/bg/${i}.png`;
                 preloadedImages.push(img);
             }
             
@@ -170,7 +169,7 @@
                 
                 const raindrop = document.createElement('img');
                 const imageNumber = Math.floor(Math.random() * totalImages) + 1;
-                raindrop.src = `/assets/404/bg/${imageNumber}.png`;
+                raindrop.src = `/bg/${imageNumber}.png`;
                 raindrop.className = 'raindrop';
                 
                 const size = Math.random() * (maxSize - minSize) + minSize;

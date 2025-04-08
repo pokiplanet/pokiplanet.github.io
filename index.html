@@ -1,1304 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-  <meta name="description" content="PokiPlanet, your ultimate destination for Pokémon card collecting! Explore our shop for rare and vintage Pokémon cards, stay updated with our blog on collection tips, card history, and the latest TCG trends. Whether you're a seasoned collector or just starting out, PokiPlanet is your go-to hub for all things Pokémon cards! 🃏✨ #PokemonCards #TCG">
-  <meta name="keywords" content="PokiPlanet, Pokémon, Pokémon TCG, Pokémon Cards">
-  <meta name="author" content="Ashley Booth">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>PokiPlanet</title>
-  <script src="libs/swiper/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
-  <link rel="manifest" href="/blog/site.webmanifest">
-  <style>
-    *,
-    *::before,
-    *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Pokemon", cursive;
-    }
-
-    :root {
-      --background-gradient: linear-gradient(45deg, #d87c3d, #f3e0c7, #d87c3d), radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 80%);
-    }
-
-    @font-face {
-      font-family: 'Pokemon';
-      src: url('/assets/font/pokemon.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    html, body {
-      overflow-x: hidden;
-      overscroll-behavior: none;
-      -webkit-overflow-scrolling: touch;
-      scroll-behavior: smooth;
-      user-select: none; 
-    }
-
-    img {
-      user-select: none;
-      pointer-events: none;
-      display: block;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #f0d240;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      border-radius: 0 0 20px 20px;
-    }
-
-    .logo-container {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo-container a {
-      text-decoration: none;
-    }
-
-    .logo {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    .site-title {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: black;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-    }
-
-    .nav-links li {
-      margin-left: 2rem;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: black;
-      font-weight: 700;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: white;
-      transform: scale(1.05);
-    }
-
-    .menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      font-weight: bold;
-      color: black;
-      -webkit-text-fill-color: black;
-    }
-
-    section.main {
-      position: relative;
-      overflow: hidden;
-      height: 100svh;
-      background-color: var(--background-gradient);
-    }
-
-    .product a {
-      text-decoration: none;
-      color:inherit;
-      display:inline-block;
-      transition: all ease-in-out 0.3s;
-    }
-
-    .product a:hover {
-      transform: translateY(0) scale(1.02);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-      opacity: 1;
-      z-index: 2;
-      transition: all ease-in-out 0.3s;
-    }
-
-    .info a {
-      text-decoration: none;
-    }
-
-    .product-image-container a {
-      box-shadow: none !important;
-      transform: none !important;
-    }
-
-    .product-image-container a:hover {
-      box-shadow: none !important;
-      transform: none !important;
-    }
-
-
-    #border-main {
-      border-bottom: 1px solid var(--background-gradient);
-      border-radius: 0 0 20px 20px; 
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-      z-index: 5;
-    }
-
-    #border-footer {
-      border-radius: 20px 20px 0 0;
-      position: relative;
-      box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
-      z-index: 5;
-    }
-
-    .bg-layer-1,
-    .bg-layer-2 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-blend-mode: overlay;
-      background-size: cover;
-      z-index: -1;
-      transition: opacity 0.6s ease;
-    }
-
-    .bg-layer-2 {
-      opacity: 0;
-    }
-
-    .fire-type {
-      background: linear-gradient(45deg, #d87c3d, #f3e0c7, #d87c3d), radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 80%);
-    }
-
-    .electric-type {
-      background: linear-gradient(45deg, #f3d368, #fff8e0, #f3d368),  radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 80%);
-    }
-
-    .fighting-type {
-      background: linear-gradient(45deg, #e29341, #ffefcd, #e29341), radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 80%);
-    }
-
-    .grass-type {
-      background: linear-gradient(45deg, #7ebe50, #e8f5d8, #7ebe50), radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 80%);
-    }
-
-    .normal-type {
-      background: linear-gradient(45deg, #e0d5c6, #f9f4ee, #e0d5c6), radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 80%);
-    }
-
-    .psychic-type {
-      background: linear-gradient(45deg, #c87dc6, #f3e0f3, #c87dc6), radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 80%);
-    }
-
-    .water-type {
-      background: linear-gradient(45deg, #5dacde, #e0f1ff, #5dacde), radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 70%);
-    }
-
-    section {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: white;
-      overflow: hidden;
-      contain: content; 
-    }
-
-    .content {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      border-radius: 20px;
-      width: min(900px, 100%);
-      z-index: 10;
-    }
-
-    .info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      max-width: 450px;
-      padding: 0 35px;
-      text-align: center;
-    }
-
-    .info p {
-      color: black;
-      font-weight: 500;
-      font-size: 2rem;
-      margin-bottom: 20px;
-      line-height: 1.5;
-    }
-
-    .title {
-      font-weight: 800;
-      text-align: center;
-      justify-content: center;
-    }
-
-    .btn {
-      display: block;
-      padding: 10px 40px;
-      margin: 10px auto;
-      font-size: 1rem;
-      font-weight: 700;
-      text-decoration: none;
-      color: black;
-      background:transparent;
-      background-image: url("/assets/img/button.webp");
-      background-position: 50%, 50%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      cursor: pointer;
-      border: none;
-      outline: none !important;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-        transform: scale(1.05);
-    }
-
-    @keyframes gelatine {
-      0%,
-      100% {
-        transform: scale(1, 1);
-      }
-      25% {
-        transform: scale(0.9, 1.1);
-      }
-      50% {
-        transform: scale(1.1, 0.9);
-      }
-      75% {
-        transform: scale(0.95, 1.05);
-      }
-    }
-
-    .product {
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-      padding: 50px 0;
-      background:transparent;
-      background-image: url("/assets/img/bg.webp");
-      background-position: 50%, 50%;
-      background-size: contain;
-    }
-
-    .card {
-      background-color: rgba(255, 255, 255, 0.8);
-      border: 2px solid black;
-      border-radius: 0.5rem;
-      width: 100%;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      .feedback {
-        background-color: rgba(255, 255, 255, 0.95);
-        border: 2px solid #f0d240;
-        border-radius: 0.5rem;
-        padding: 2rem;
-        text-align: center;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      .feedback p {
-        font-weight: 700;
-        color: #f0d240;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-        font-size: 1.5rem;
-      }
-
-    .product-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .product-row.reverse {
-      flex-direction: row-reverse;
-    }
-
-    .product-image-container {
-      margin:auto;
-      width: 500px;
-      height: auto;
-      display: flex;
-      justify-content: center;
-
-    }
-
-    .product-image-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    hr {
-      margin:10px auto
-    }
-
-    .orb-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-      z-index: 1;
-    }
-
-    .orb {
-      position: absolute;
-      border-radius: 100%;
-      background-size: cover;
-    }
-
-    .blog-section {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 75vh;
-      min-width: 100vh;
-      background: transparent;
-      background-image: url("/assets/img/bg-2.webp");
-      background-position: 50%, 50%;
-      overflow: hidden;
-      border-radius: 20px;
-      position: relative;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-
-    .blog-card h2 {
-      color: black;
-      font-size: 1rem;
-    }
-
-    .blog-card .btn {
-      position: relative;
-      z-index: 10;
-      padding: 2.5rem;
-      text-align: center;
-      width: 100%; 
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      background-image: url("/assets/img/btn.webp"); 
-    }
-
-    .swiper {
-      width: 327px;
-      height: 550px;
-      padding: 50px 0;
-    }
-
-    .swiper-slide {
-      position: relative;
-      border-radius: 10px;
-      user-select: none;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .swiper-slide img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      will-change: transform;
-    }
-
-    .img-position {
-      object-position: 50% 0%;
-    }
-
-    a:focus, 
-    button:focus, 
-    input:focus, 
-    textarea:focus, 
-    select:focus, 
-    a:active, 
-    button:active, 
-    input:active, 
-    textarea:active, 
-    select:active, 
-    .skill:focus, 
-    .skill:active {
-      outline: none !important;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
-  
-    .reviews::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 100px;
-      background: linear-gradient(to bottom, rgba(249,249,249,1) 0%, rgba(249,249,249,0) 100%);
-      z-index: 1;
-      pointer-events: none;
-    }
-  
-    .reviews::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100px;
-      background: linear-gradient(to top, rgba(249,249,249,1) 0%, rgba(249,249,249,0) 100%);
-      z-index: 1;
-      pointer-events: none;
-    }
-  
-    .reviews-container {
-      margin: 0 auto;
-      position: relative;
-    }
-    
-    .review-carousel {
-      position: relative;
-      overflow: visible;
-      padding: 20px 0;
-      margin: 0 -10px;
-    }
-    
-    .review-track {
-      display: flex;
-      gap: 20px;
-      padding: 10px 0;
-    }
-    
-    .review-card {
-      flex: 0 0 auto;
-      width: 90%;
-      max-width: 320px;
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-      display: flex;
-      flex-direction: column;
-      min-height: 300px;
-      border: 2px solid #f0d240;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      opacity: 0.95;
-      transform: translateY(10px);
-  }
-    
-    .review-card:hover {
-      transform: translateY(0) scale(1.02);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-      opacity: 1;
-      z-index: 2;
-    }
-    
-    .customer-name {
-      font-weight: 700;
-      color: #f0d240;
-      margin-bottom: 15px;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-      display: flex;
-      align-items: center;
-      font-size: 0.8rem;
-    }
-    
-    .customer-name::before {
-      content: '★';
-      margin-right: 8px;
-      color: #f0d240;
-    }
-    
-    .customer-review {
-      font-size: 0.8rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      flex-grow: 1;
-    }
-    
-    .item-purchased {
-      font-size: 0.6rem;
-      font-style: italic;
-      color: #555;
-      padding-top: 12px;
-      border-top: 1px solid #eee;
-    }
-
-    footer {
-      padding: 1rem;
-      background-color: #f0d240;
-    }
-
-    .footer-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-    }
-
-    .footer-left ul,
-    .footer-right ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .footer-left li,
-    .footer-right li {
-      margin-bottom: 0.5rem;
-    }
-
-    .footer-left a,
-    .footer-right a {
-      text-decoration: none;
-      color: black; 
-    }
-
-    .footer-left a:hover,
-    .footer-right a:hover {
-      text-decoration: underline;
-    }
-
-    .footer-middle {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      white-space: nowrap;
-    }
-
-    .footer-right {
-      text-align: right;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-
-    .footer-left,
-    .footer-right,
-    .footer-middle {
-      font-size: 0.5rem;
-    }
-
-    .copyright {
-      font-family:Arial, Helvetica, sans-serif;
-      font-size: 0.75rem;
-      font-weight: bold;;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 5px;
-    }
-
-    .social-icons a {
-      display: inline-block;
-      transition: transform 0.3s ease;
-      color: black;
-    }
-
-    .social-icons svg {
-      width: 1rem;
-      height: 1rem;
-      fill: currentColor;
-      transition: transform 0.3s ease, fill 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-      color: #555;
-    }
-
-    .social-icons a {
-      padding: 1px;
-    }
-
-    @media (max-width: 1000px) {
-        .blog-section {
-        min-height: 100vw;
-        min-width: 0vw;
-        width: 90%;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="manifest" href="/ico/site.webmanifest">
+    <title>PokiPlanet</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            height: 100vh;
+            width: 100vw;
+            font-family: monospace;
+            background-image: url('pallet-town-night.webp');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        .blog-card h2 {
-          font-size: 0.8rem;
-        }
-    }
 
-    @media (max-width: 769px), (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-      header {
-        padding: 1rem;
-        position: static;
-        border-radius: 0;
-        height:auto;
-      }
-
-      .blog-card {
-        width:90%;
+        .container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
         }
 
-        .blog-card h2 {
-          font-size: 0.8rem;
+        .raindrop {
+            position: absolute;
+            opacity: 0;
+            will-change: transform, opacity;
+            animation: fall linear forwards;
         }
 
-      section.main {
-        height: auto;
-        padding-top: 0;
-      }
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(calc(100vh + 50px)) rotate(360deg);
+                opacity: 0;
+            }
+        }
 
-      .site-title {
-        font-size: 1.2rem;
-      }
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            max-width: 42rem;
+            width: 100%;
+            padding: 2rem;
+        }
 
-      .info p {
-        font-size: 1.2rem;
-      }
+        .card-content {
+            display: flex;
+            align-items: center;
+        }
 
-      .nav-links {
-        position: fixed;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background-color: #f0d240;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 0;
-        transition: transform 0.3s ease-in-out;
-        transform: translateY(-150%);
-        border-radius: 0 0 20px 20px;
-        z-index: 1000;
-      }
+        .pikachu-image {
+            width: 5rem;
+            height: 3.5rem;
+            margin-right: 1.5rem;
+            object-fit: cover;
+            overflow: visible;
+        }
 
-      .nav-links.active {
-        transform: translateY(0);
-      }
+        .text-section {
+            flex-grow: 1;
+            border-left: 2px solid white;
+            padding-left: 1.5rem;
+        }
 
-      .nav-links li {
-        margin: 1rem 0;
-      }
+        .text-section h1 {
+            color: white;
+            font-size: 1.875rem;
+            margin-bottom: 0.5rem;
+        }
 
-      .menu-toggle {
-        display: block;
-      }
+        .text-section p {
+            color: white;
+            font-size: 1.25rem;
+        }
 
-      .content {
-        flex-direction: column;
-        width: 90%;
-        padding: 20px 0;
-      }
-      
-      .swiper {
-        width: 194px;
-        height: 370px;
-      }
-      
-      .swiper-slide {
-        transform: translate3d(0, 0, 0);
-        backface-visibility: hidden;
-        perspective: 1000;
-        will-change: transform, visibility, z-index;
-      }
+        .footer {
+            padding: 1rem;
+            text-align: center;
+        }
 
-      .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        position: static;
-      }
+        .footer p {
+            color: white;
+            font-size: 0.875rem;
+        }
 
-      .footer-middle {
-        position: static;
-        transform: none;
-        order: 2;
-      }
+        a {
+            color:white;
+        }
 
-      .footer-left, .footer-right {
-        width: 100%;
-        text-align: center;
-      }
+        a:hover {
+            color:yellow;
+        }
 
-      .footer-right ul, 
-      .footer-left ul {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .footer-right {
-        text-align: center;
-        align-items: center;
-      }
-
-      .product-row, 
-      .product-row.reverse {
-        flex-direction: column;
-        gap: 30px;
-        padding-left:50px;
-        padding-right:50px;
-      }
-      
-      .product-image-container {
-        width: 100%;
-        height: auto;
-      }
-
-      .card h2 {
-        font-size: 1rem;
-      }
-
-      .card p {
-        font-size: 0.8rem;
-      }
-
-      .feedback {
-        background-color: rgba(255, 255, 255, 0.95);
-        border: 2px solid #f0d240;
-        border-radius: 0.5rem;
-        padding: 1rem;
-        max-width: 300px;
-      }
-
-      .feedback h2 {
-        font-size: 1rem;
-      }
-
-      .feedback p {
-        font-weight: 700;
-        color: #f0d240;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-        font-size: 1.5rem;
-      }
-
-      .reviews {
-          padding: 50px 15px;
-      }
-      
-      .section-title {
-        font-size: 1rem;
-      }
-
-      .social-icons {
-        gap: 20px;
-      }
-    
-      .social-icons a {
-        font-size: 1;
-      }
-    
-    }
-  </style>
+        .content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <header id="border-header">
-      <div class="logo-container">
-        <a href="https://pokiplanet.com/">
-        <img src="/assets/img/pokiplanet.webp" alt="PokiPlanet Logo" class="logo"></a>
-        <a href="https://pokiplanet.com/"><h1 class="site-title">PokiPlanet</h1></a>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="https://ebay.co.uk/usr/pokiplanet">SHOP</a></li>
-          <li><a href="./blog/">BLOG</a></li>
-        </ul>
-        <button class="menu-toggle" id="menuToggle">☰</button>
-      </nav>
-    </header>
-
-    <section class="main" id="border-main">
-        <div class="content">
-          <div class="info">
-            <p>Welcome to <span class="title">PokiPlanet</span>
-            </p>
-            <a href="#shop"><button class="btn">SHOP</button></a>
-            <a href="#blog"><button class="btn">BLOG</button></a>
-          </div>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/1.webp"
-                  alt="Alakazam" />
-              </div>
-  
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/2.webp"
-                  alt="Blastoise" />
-              </div>
-  
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/3.webp"
-                  alt="Chansey" />
-              </div>
-  
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/4.webp"
-                  alt="Charizard" />
-              </div>
-  
-              <div class="swiper-slide">
-                <img
-                  class="img-position"
-                  src="/assets/img/5.webp"
-                  alt="Clefairy" />
-              </div>
-  
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/6.webp"
-                  alt="Gyarados" />
-              </div>
-  
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/7.webp"
-                  alt="hitmonchan" />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/8.webp"
-                  alt="Machamp" />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/9.webp"
-                  alt="Magneton" />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/10.webp"
-                  alt="Mewtwo" />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/11.webp"
-                  alt="Nidoking" />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/12.webp"
-                  alt="Ninetales" />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/13.webp"
-                  alt="Poliwrath" />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/14.webp"
-                  alt="Raichu" />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="/assets/img/15.webp"
-                  alt="Venusaur" />
-              </div>
-  
-              <div class="swiper-slide">
-                <img
-                  class="img-position"
-                  src="/assets/img/16.webp"
-                  alt="Zapdos" />
-              </div>
+    <div class="container" id="rain-container"></div>
+    
+    <div class="content">
+        <div class="card">
+            <div class="card-content">
+                <img src="pikachu.gif" alt="Player" class="pikachu-image">
+                <div class="text-section">
+                    <h1>Coming Soon</h1>
+                    <p>PokiPlanet is under construction</p>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-
-      <section class="product" id="shop">
-      <div class="content product-row">
-        <a href="https://www.ebay.co.uk/usr/pokiplanet">
-        <div class="card">
-          <h2>Elite Graded Cards</h2>
-          <hr>
-          <p>Professionally graded Pokémon cards, authenticated by top grading services.</p>
-        </div>
-        </a>
-        <div class="product-image-container">
-          <a href="https://www.ebay.co.uk/usr/pokiplanet">
-          <img src="/assets/img/psa10.webp" alt="Graded Cards">
-          </a>
-        </div>
-      </div>
-      
-      <div class="content product-row reverse">
-        <a href="https://www.ebay.co.uk/usr/pokiplanet" id="a-img">
-        <div class="card">
-          <h2>Sealed Product</h2>
-          <hr>
-          <p>Shop with confidence from a trusted seller with expertise in factory-sealed Pokémon products.</p>
-        </div>
-        </a>
-        <div class="product-image-container">
-          <a href="https://www.ebay.co.uk/usr/pokiplanet">
-          <img src="/assets/img/sealed.webp" alt="Sealed Product">
-          </a>
-        </div>
-      </div>
-      
-      <div class="content product-row">
-        <a href="https://www.ebay.co.uk/usr/pokiplanet">
-        <div class="card">
-          <h2>Vintage Rarities</h2>
-          <hr>
-          <p>Discover rare vintage Pokémon cards, specializing in elusive English and Japanese releases, niche variants, and coveted error prints.</p>
-        </div>
-        </a>
-        <div class="product-image-container">
-          <a href="https://www.ebay.co.uk/usr/pokiplanet">
-          <img src="/assets/img/vintage.webp" alt="Vintage Cards">
-          </a>
-        </div>
-      </div>
-
-      <div class="feedback">
-      <h2>Rated & Reviewed by You</h2>
-      <p>★★★★★</p>
-      </div>
-
-      <div class="reviews-container">
-        <div class="review-carousel">
-          <div class="review-track"></div>
-        </div>
-      </div>
-
-      <div class="blog-section" id="blog">
-        <div class="blog-card">
-          <a href="./blog/" class="btn"><h2>Visit the PokiPlanet Blog</h2></a>
-        </div>
-      </div>
-    </section>
-
-    <body>
-
-
-<footer id="border-footer">
-  <div class="footer-container">
-    <div class="footer-left">
-      <ul>
-        <li><a href="https://ebay.co.uk/usr/pokiplanet">Shop</a></li>
-        <li><a href="./blog/">Blog</a></li>
-        <li><a href="./blog/about">About</a></li>
-      </ul>
     </div>
 
-    <div class="footer-middle">
-      <p><span class="copyright">©</span> PokiPlanet 2025</p>
-      <div class="social-icons">
-        <a href="https://x.com/pokiplanet" target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-        </a>
-    
-        <a href="https://instagram.com/ash_efour" target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-        </a>
-    
-        <a href="mailto:info@pokiplanet.com">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg>
-        </a>
-      </div>
-    </div>
-    
-    <div class="footer-right">
-      <ul>
-        <li><a href="./blog/tos/#disclaimer">Disclaimer</a></li>
-        <li><a href="./blog/tos/#terms-of-use">Terms of Use</a></li>
-        <li><a href="https://ashley-booth.com" target="_blank" rel="noopener noreferrer">Website Design By Ashley Booth</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+    <footer class="footer">
+        <p>© 2025 PokiPlanet. All rights reserved.</p>
+    </footer>
 
-
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-      const mainSection = document.querySelector('section.main');
-
-      ['bg-layer-1 fire-type', 'bg-layer-2'].forEach(className => {
-          const bgLayer = document.createElement('div');
-          bgLayer.className = className;
-          mainSection.appendChild(bgLayer);
-      });
-
-      const swiper = new Swiper(".swiper", {
-          effect: "cards",
-          grabCursor: true,
-          initialSlide: 3,
-          speed: 300,
-          loop: true,
-          mousewheel: { invert: false },
-          touchRatio: 1,
-          touchAngle: 45,
-          threshold: 5,
-          watchSlidesProgress: true,
-          autoplay: { delay: 2000, disableOnInteraction: false }
-      });
-
-      const slideTypeMap = {
-          1: 'psychic-type', 2: 'water-type', 3: 'normal-type', 4: 'fire-type',
-          5: 'normal-type', 6: 'water-type', 7: 'fighting-type', 8: 'fighting-type',
-          9: 'electric-type', 10: 'psychic-type', 11: 'grass-type', 12: 'fire-type',
-          13: 'water-type', 14: 'electric-type', 15: 'grass-type', 16: 'electric-type'
-      };
-
-      let activeLayer = 1;
-      function updateBackground(slideNumber) {
-          const [layer1, layer2] = document.querySelectorAll('.bg-layer-1, .bg-layer-2');
-          const typeClass = slideTypeMap[slideNumber];
-
-          if (typeClass) {
-              const [currentLayer, nextLayer] = activeLayer === 1 ? [layer1, layer2] : [layer2, layer1];
-              nextLayer.className = nextLayer.className.split(' ')[0];
-              nextLayer.classList.add(typeClass);
-              setTimeout(() => {
-                  currentLayer.style.opacity = '0';
-                  nextLayer.style.opacity = '1';
-                  activeLayer = activeLayer === 1 ? 2 : 1;
-              }, 150);
-          }
-      }
-
-      swiper.on('slideChange', function () {
-          updateBackground(this.realIndex + 1);
-      });
-
-    document.getElementById('menuToggle').addEventListener('click', () => {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active');
-        menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
-    });
-
-    if (typeof gsap === 'undefined') {
-        ['gsap.min.js', 'ScrollTrigger.min.js'].forEach(script => {
-            const el = document.createElement('script');
-            el.src = `https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/${script}`;
-            document.head.appendChild(el);
-        });
-    } else {
-        initializeAnimations();
-    }
-
-    function initializeAnimations() {
-        gsap.registerPlugin(ScrollTrigger);
-
-        document.querySelectorAll('.product-row').forEach(row => {
-            gsap.from(row, {
-                opacity: 0, y: 150, duration: 1,
-                scrollTrigger: { trigger: row, start: 'top 80%', toggleActions: 'play none none reverse' }
-            });
-        });
-    }
-
-    function createOrbOverlay(containerId) {
-            const container = document.getElementById(containerId);
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('rain-container');
+            const totalImages = 151;
+            const maxRaindrops = 40;
+            const minSize = 60;
+            const maxSize = 80;
+            const minDuration = 5;
+            const maxDuration = 15;
             
-            const orbContainer = document.createElement("div");
-            orbContainer.classList.add("orb-container");
-            container.appendChild(orbContainer);
-
-            const orbImages = [
-                '/assets/img/orb1.webp', 
-                '/assets/img/orb2.webp', 
-                '/assets/img/orb3.webp', 
-                '/assets/img/orb4.webp', 
-                '/assets/img/orb5.webp', 
-                '/assets/img/orb6.webp', 
-                '/assets/img/orb7.webp'
-            ];
-
-            const numOrbs = 30;
-            const orbs = [];
-
-            for (let i = 0; i < numOrbs; i++) {
-                let orb = document.createElement("div");
-                orb.classList.add("orb");
-                
-                const randomImage = orbImages[Math.floor(Math.random() * orbImages.length)];
-                orb.style.backgroundImage = `url(${randomImage})`;
-                
-                orb.style.left = `${Math.floor(Math.random() * 100)}%`;
-                orb.style.top = `${Math.floor(Math.random() * 100)}%`;
-                
-                const size = Math.random() * 2 + 1;
-                orb.style.width = `${size}em`;
-                orb.style.height = orb.style.width;
-                
-                orbs.push(orb);
-                orbContainer.append(orb);
+            const preloadedImages = [];
+            for (let i = 1; i <= totalImages; i++) {
+                const img = new Image();
+                img.src = `/bg/${i}.png`;
+                preloadedImages.push(img);
             }
-
-            orbs.forEach((el, i, ra) => {
-                let to = {
-                    x: Math.random() * (i % 2 === 0 ? -11 : 11),
-                    y: Math.random() * 12
-                };
-
-                let anim = el.animate(
-                    [
-                        { transform: "translate(0, 0)" },
-                        { transform: `translate(${to.x}rem, ${to.y}rem)` }
-                    ],
-                    {
-                        duration: (Math.random() + 1) * 2000,
-                        direction: "alternate",
-                        fill: "both",
-                        iterations: Infinity,
-                        easing: "ease-in-out"
+            
+            function createRaindrop() {
+                if (container.children.length >= maxRaindrops) return;
+                
+                const raindrop = document.createElement('img');
+                const imageNumber = Math.floor(Math.random() * totalImages) + 1;
+                raindrop.src = `/bg/${imageNumber}.png`;
+                raindrop.className = 'raindrop';
+                
+                const size = Math.random() * (maxSize - minSize) + minSize;
+                const left = Math.random() * 100;
+                const duration = Math.random() * (maxDuration - minDuration) + minDuration;
+                
+                raindrop.style.width = `${size}px`;
+                raindrop.style.height = 'auto';
+                raindrop.style.left = `${left}%`;
+                raindrop.style.animationDuration = `${duration}s`;
+                
+                const delay = Math.random() * 5;
+                raindrop.style.animationDelay = `${delay}s`;
+                
+                container.appendChild(raindrop);
+                
+                setTimeout(() => {
+                    if (raindrop.parentNode === container) {
+                        container.removeChild(raindrop);
                     }
-                );
-            });
-        }
-    createOrbOverlay('blog');
-});
-
-
-    const reviews = [
-      {
-        name: "hayleystuff4u",
-        review: "Perfect 👍 Great item & Fast Delivery A+++ 😊 Thank you 🙏",
-        item: "PSA 8 - Pokemon CD Promo Charizard 006 Japanese Holo 1998"
-      },
-      {
-        name: "juliedunan-0",
-        review: "Item corresponding to the ad. Fast delivery and careful.",
-        item: "PSA 8 - Shining Mew #151 CoroCoro Comics Promo"
-      },
-      {
-        name: "crissm_87",
-        review: "Great seller. Arrived safely and on time. Thank you.",
-        item: "CGC 8.5 - Eevee Black Star Promo #11"
-      },
-      {
-        name: "premiumtradingcardsuk",
-        review: "Perfect seller, thanks 👍",
-        item: "PSA 9 - Sentret 022/L-P 2009 Holo Legend Battle Prize Promo"
-      },
-      {
-        name: "johnny770_3",
-        review: "AAA++ will definitely buy again",
-        item: "Sword & Shield Darkness Ablaze Booster Box"
-      },
-      {
-        name: "pal_version",
-        review: "very happy thank you",
-        item: "Sword & Shield Evolving Skies Booster Box"
-      },
-      {
-        name: "lovetravel82",
-        review: "Excellent service!. Item was sold at great price and was fast delivered. Awesome item and got some great hits! Hope to deal with you again A ++",
-        item: "Hidden Fates Raichu Tin"
-      },
-      {
-        name: "kspokestop",
-        review: "The card arrived well before the estimated delivery date and was packaged really well. Would happily purchase from seller again!",
-        item: "Snorlax XY179 Black Star Promo"
-      }
-    ];
-    
-    const reviewTrack = document.querySelector('.review-track');
-    
-    const allReviews = [...reviews, ...reviews, ...reviews];
-    
-    allReviews.forEach((review, index) => {
-      const card = document.createElement('div');
-      card.className = 'review-card';
-      
-      const customerName = document.createElement('p');
-      customerName.className = 'customer-name';
-      customerName.textContent = review.name;
-      
-      const customerReview = document.createElement('p');
-      customerReview.className = 'customer-review';
-      customerReview.textContent = review.review;
-      
-      const itemPurchased = document.createElement('p');
-      itemPurchased.className = 'item-purchased';
-      itemPurchased.textContent = review.item;
-      
-      card.appendChild(customerName);
-      card.appendChild(customerReview);
-      card.appendChild(itemPurchased);
-      reviewTrack.appendChild(card);
-    });
-    
-    const isMobile = window.innerWidth <= 768;
-    const totalWidth = allReviews.length * (isMobile ? (window.innerWidth - 80 + 20) : 320);
-    const duration = totalWidth / 300; 
-    
-    const scrollTween = gsap.to('.review-track', {
-      x: -totalWidth / 3,
-      duration: duration,
-      ease: 'none',
-      repeat: 1,
-      yoyo: true,
-      repeatDelay: 0,
-      onComplete: () => {
-        gsap.set('.review-track', { x: 0 });
-        scrollTween.restart();
-      }
-    });
-
-    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-    anchor.addEventListener('click', function(event) {
-      event.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-  </script>
+                    createRaindrop();
+                }, (duration + delay) * 1000);
+            }
+            
+            for (let i = 0; i < maxRaindrops; i++) {
+                setTimeout(() => {
+                    createRaindrop();
+                }, Math.random() * 3000);
+            }
+            
+            setInterval(createRaindrop, 500);
+        });
+    </script>
 </body>
 </html>
