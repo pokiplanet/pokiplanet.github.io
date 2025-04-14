@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>History on PokiPlanet Blog</title>
+    <link>https://pokiplanet.com/blog/tags/history/</link>
+    <description>Recent content in History on PokiPlanet Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
+    <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
+    <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
+    <lastBuildDate>Mon, 24 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/history/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Charizard Phenomenon</title>
+      <link>https://pokiplanet.com/blog/posts/the-charizard-phenomenon/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/posts/the-charizard-phenomenon/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/the-charizard-phenomenon/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>

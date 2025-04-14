@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - PokiPlanet</title>
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        :root {
+            --primary-yellow: #f0d240;
+            --pokemon-blue: #3b4cca;
+            --pokemon-red: #ff0000;
+        }
+        
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #f8f8f8;
+            overflow-x: hidden;
+        }
+        
+        .pokemon-font {
+            font-family: 'Pokemon Solid', sans-serif;
+            letter-spacing: 4px;
+        }
+
+        .hamburger {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            transition: all 0.25s;
+            position: relative;
+        }
+        
+        .hamburger-top,
+        .hamburger-middle,
+        .hamburger-bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 2px;
+            background: #000;
+            transform: rotate(0);
+            transition: all 0.5s;
+        }
+        
+        .hamburger-middle {
+            transform: translateY(7px);
+        }
+        
+        .hamburger-bottom {
+            transform: translateY(14px);
+        }
+        
+        .open .hamburger-top {
+            transform: rotate(45deg) translateY(6px) translate(6px);
+        }
+        
+        .open .hamburger-middle {
+            display: none;
+        }
+        
+        .open .hamburger-bottom {
+            transform: rotate(-45deg) translateY(6px) translate(-6px);
+        }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 300px;
+        }
+
+    </style>
+</head>
+<body class="relative">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mr-3">
+                        <a href="https://pokiplanet.com">
+                        <img src="/assets/img/pokiplanet.webp">
+                    </div>
+                    <h1 class="text-2xl pokemon-font text-gray-800">PokiPlanet</h1>
+                        </a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="https://pokiplanet.com/#shop" class="text-gray-800 hover:text-yellow-500 transition duration-300">Shop</a>
+                    <a href="https://pokiplanet.com/#reviews" class="text-gray-800 hover:text-yellow-500 transition duration-300">Reviews</a>
+                    <a href="https://pokiplanet.com/#blog" class="text-gray-800 hover:text-yellow-500 transition duration-300">Blog</a>
+                </nav>
+                
+                <div class="md:hidden">
+                    <button id="menu-btn" class="hamburger focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="menu" class="mobile-menu md:hidden">
+                <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                    <a href="https://pokiplanet.com/shop" class="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-yellow-400 rounded-md">Shop</a>
+                    <a href="https://pokiplanet.com/#reviews" class="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-yellow-400 rounded-md">Reviews</a>
+                    <a href="https://pokiplanet.com/#blog" class="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-yellow-400 rounded-md">Blog</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-gray-50 text-gray-800 px-4 py-10">
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-3xl md:text-4xl pokemon-font text-yellow-600 mb-6">Terms of Service</h1>
+    
+            <p class="mb-4">
+                By accessing and using PokiPlanet, you agree to the following terms of service. Please read them carefully before using our website.
+            </p>
+
+            <hr class="my-8 border-gray-300">
+
+            <h2 id="disclaimer" class="text-2xl text-gray-900 mb-4">Disclaimer</h2>
+            <p class="mb-4">
+                Pokémon and all related properties are © Nintendo, Creatures, and GAME FREAK.
+            </p>
+            <p class="mb-4">
+                PokiPlanet is an independent fan site and is not affiliated with, endorsed by, or sponsored by The Pokémon Company, Nintendo, Creatures, or GAME FREAK.
+            </p>
+            <p class="mb-4">
+                All product names, logos, and brands are the property of their respective owners.
+            </p>
+
+            <hr class="my-8 border-gray-300">
+    
+            <h3 id="liscence" class="text-xl text-gray-800 mb-2">Content Usage</h3>
+            <p class="mb-4">
+                All original content on PokiPlanet is licensed under a <b>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</b>.
+            </p>
+            <p class="mb-4">
+                You may share, remix, and adapt our content for non-commercial purposes, provided you credit PokiPlanet with a link back to the original source.
+            </p>
+            <p class="mb-4">
+                For commercial inquiries, please contact <a href="mailto:info@pokiplanet.com" class="text-yellow-600">info@pokiplanet.com</a>.
+            </p>
+
+            <hr class="my-8 border-gray-300">
+    
+            <h3 class="text-xl text-gray-800 mb-2">Third-Party Content</h3>
+            <p class="mb-4">
+                PokiPlanet may feature third-party products, such as Pokémon cards and collectibles, for sale or display. These products are the property of their respective owners.
+            </p>
+            <p class="mb-4">
+                Any product names, logos, or brands mentioned are used for identification purposes only and do not imply endorsement.
+            </p>
+
+            <hr class="my-8 border-gray-300">
+    
+            <h3 id="authenticity" class="text-xl text-gray-800 mb-2">Purchases and Authenticity</h3>
+            <p class="mb-4">
+                PokiPlanet guarantees the authenticity of all items sold through the site. However, due to the nature of collectible markets, all sales are final unless stated otherwise.
+            </p>
+            <p class="mb-4">
+                We strive to accurately describe products, but collectors should carefully review item descriptions and photos before purchase.
+            </p>
+
+            <hr class="my-8 border-gray-300">
+    
+            <h3 class="text-xl text-gray-800 mb-2">Limitation of Liability</h3>
+            <p class="mb-4">
+                PokiPlanet is not responsible for any loss or damage resulting from the use of this website, including but not limited to financial loss, data loss, or damage to personal property.
+            </p>
+
+            <hr class="my-8 border-gray-300">
+    
+            <h3 class="text-xl text-gray-800 mb-2">Changes to Terms</h3>
+            <p class="mb-4">
+                PokiPlanet reserves the right to update these Terms of Service at any time. Continued use of the site constitutes acceptance of any changes.
+            </p>
+
+            <hr class="my-8 border-gray-300">
+    
+            <footer class="mt-8 text-center text-gray-600">
+                <p class="text-sm">Last Updated: April 2025</p>
+            </footer>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                         <a href="https://pokiplanet.com" class="flex items-center">
+                            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center mr-3">
+                                <img src="/assets/img/pokiplanet.webp" alt="PokiPlanet Logo">
+                            </div>
+                            <h3 class="text-xl pokemon-font">PokiPlanet</h3>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Your trusted source for premium Pokémon cards & TCG insights.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/pokiplanet" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-yellow-400 transition duration-300">
+                            <i class="fab fa-twitter fa-lg"></i> <span class="sr-only">Twitter</span>
+                        </a>
+                        <a href="https://www.instagram.com/ash_efour/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-yellow-400 transition duration-300">
+                            <i class="fab fa-instagram fa-lg"></i> <span class="sr-only">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-yellow-400">Shop</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=graded" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Graded Cards</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=sealed" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Sealed Products</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=vintage" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Vintage Cards</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=modern" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Modern Hits</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=japanese" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Japanese Imports</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-yellow-400">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/blog" class="text-gray-400 hover:text-white transition duration-300">Blog Home</a></li>
+                        <li><a href="/blog" class="text-gray-400 hover:text-white transition duration-300">Card Care</a></li>
+                        <li><a href="https://www.psacard.com/gradingstandards" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Grading Guide (PSA)</a></li>
+                        <li><a href="https://resources.psacard.com/PSA-How-To-Submit.pdf" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Submission Guide (PSA)</a></li>
+                        <li><a href="/blog" class="text-gray-400 hover:text-white transition duration-300">My Collection</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-yellow-400">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about/" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="/terms-of-service/#disclaimer" class="text-gray-400 hover:text-white transition duration-300">Disclaimer</a></li>
+                        <li><a href="/terms-of-service/#liscence" class="text-gray-400 hover:text-white transition duration-300">License</a></li>
+                        <li><a href="/terms-of-service/#authenticity" class="text-gray-400 hover:text-white transition duration-300">Authenticity</a></li>
+                        <li><a href="/about/#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-xs mb-4 md:mb-0">
+                    © <span id="footer-year">2024</span> PokiPlanet. All rights reserved. Pokémon and Pokémon character names are trademarks of Nintendo. Website design by <a href="https://ashley-booth.com" class="text-gray-400 hover:text-white transition duration-300">Ashley Booth.</a>
+                </p>
+                <div class="flex space-x-6">
+                    <a href="/privacy-policy/" class="text-gray-400 hover:text-white transition duration-300 text-xs">Privacy Policy</a>
+                    <a href="/terms-of-service/" class="text-gray-400 hover:text-white transition duration-300 text-xs">Terms of Service</a>
+                    <a href="/cookie-policy/" class="text-gray-400 hover:text-white transition duration-300 text-xs">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('menu');
+    
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('open');
+        mobileMenu.classList.toggle('open');
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const hash = window.location.hash;
+    
+        if (hash) {
+          setTimeout(() => {
+            const target = document.querySelector(hash);
+            if (target) {
+              const offset = 100;
+              const topPos = target.getBoundingClientRect().top + window.scrollY - offset;
+              window.scrollTo({ top: topPos, behavior: 'smooth' });
+            }
+          }, 100);
+        }
+      });
+</script>
+</body>
+</html>

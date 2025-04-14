@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on PokiPlanet Blog</title>
+    <link>https://pokiplanet.com/blog/tags/</link>
+    <description>Recent content in Tags on PokiPlanet Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
+    <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
+    <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
+    <lastBuildDate>Mon, 24 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AI</title>
+      <link>https://pokiplanet.com/blog/tags/ai/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/ai/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Base Set</title>
+      <link>https://pokiplanet.com/blog/tags/base-set/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/base-set/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Charizard</title>
+      <link>https://pokiplanet.com/blog/tags/charizard/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/charizard/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://pokiplanet.com/blog/tags/history/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/history/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mitsuhiro Arita</title>
+      <link>https://pokiplanet.com/blog/tags/mitsuhiro-arita/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/mitsuhiro-arita/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Signature</title>
+      <link>https://pokiplanet.com/blog/tags/signature/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/signature/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

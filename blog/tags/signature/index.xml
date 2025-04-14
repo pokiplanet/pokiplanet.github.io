@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Signature on PokiPlanet Blog</title>
+    <link>https://pokiplanet.com/blog/tags/signature/</link>
+    <description>Recent content in Signature on PokiPlanet Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
+    <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
+    <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
+    <lastBuildDate>Mon, 24 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/signature/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pulling a Signature from a Pokémon Card</title>
+      <link>https://pokiplanet.com/blog/posts/pulling-a-signature/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/posts/pulling-a-signature/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/pulling-a-signature/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>
