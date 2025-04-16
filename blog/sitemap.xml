@@ -4,13 +4,19 @@
 
   <url>
     <loc>https://pokiplanet.com/blog/</loc>
-    <lastmod>2025-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pokiplanet.com/blog/posts/</loc>
-    <lastmod>2025-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/posts/the-black-flame-ninetales/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
