@@ -9,7 +9,17 @@
     <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Thu, 17 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Research</title>
+      <link>https://pokiplanet.com/blog/categories/research/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/categories/research/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Article</title>
@@ -17,16 +27,6 @@
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/categories/article/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>https://pokiplanet.com/blog/categories/research/</link>
-      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/categories/research/</guid>
       <description></description>
       
     </item>
