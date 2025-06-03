@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PSA on PokiPlanet Blog</title>
+    <link>https://pokiplanet.com/blog/tags/psa/</link>
+    <description>Recent content in PSA on PokiPlanet Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
+    <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
+    <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
+    <lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/psa/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Collection Update - PSA 10 Japanese Promo</title>
+      <link>https://pokiplanet.com/blog/posts/collection-update-1/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/posts/collection-update-1/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/collection-update-1/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>
