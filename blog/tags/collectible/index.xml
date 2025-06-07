@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collectible on PokiPlanet Blog</title>
+    <link>https://pokiplanet.com/blog/tags/collectible/</link>
+    <description>Recent content in Collectible on PokiPlanet Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
+    <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
+    <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
+    <lastBuildDate>Thu, 05 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/collectible/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pokémon Emerald Rayquaza Metal GBA SP Case</title>
+      <link>https://pokiplanet.com/blog/posts/rayquaza-metal-case/</link>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/posts/rayquaza-metal-case/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/rayquaza-metal-case/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>
