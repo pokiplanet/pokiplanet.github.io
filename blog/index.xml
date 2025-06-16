@@ -2,83 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PokiPlanet Blog</title>
-    <link>https://pokiplanet.com/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content on PokiPlanet Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Thu, 05 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Collection Update - PSA 10 Japanese Promo</title>
+      <link>http://localhost:1313/blog/posts/collection-update-2/</link>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>http://localhost:1313/blog/posts/collection-update-2/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/posts/collection-update-2/featured.webp" />
+    </item>
     
     <item>
       <title>Pokémon Emerald Rayquaza Metal GBA SP Case</title>
-      <link>https://pokiplanet.com/blog/posts/rayquaza-metal-case/</link>
+      <link>http://localhost:1313/blog/posts/rayquaza-metal-case/</link>
       <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/rayquaza-metal-case/</guid>
+      <guid>http://localhost:1313/blog/posts/rayquaza-metal-case/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/rayquaza-metal-case/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/posts/rayquaza-metal-case/featured.webp" />
     </item>
     
     <item>
       <title>Collection Update - PSA 10 Japanese Promo</title>
-      <link>https://pokiplanet.com/blog/posts/collection-update-1/</link>
+      <link>http://localhost:1313/blog/posts/collection-update-1/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/collection-update-1/</guid>
+      <guid>http://localhost:1313/blog/posts/collection-update-1/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/collection-update-1/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/posts/collection-update-1/featured.webp" />
     </item>
     
     <item>
       <title>Inside The Diamond &amp; Pearl Trainer Kit</title>
-      <link>https://pokiplanet.com/blog/posts/inside-dp-trainer-kit/</link>
+      <link>http://localhost:1313/blog/posts/inside-dp-trainer-kit/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/inside-dp-trainer-kit/</guid>
+      <guid>http://localhost:1313/blog/posts/inside-dp-trainer-kit/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/inside-dp-trainer-kit/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/posts/inside-dp-trainer-kit/featured.webp" />
     </item>
     
     <item>
       <title>Searching Sealed Pokémon Booster Packs</title>
-      <link>https://pokiplanet.com/blog/posts/searching-packs/</link>
+      <link>http://localhost:1313/blog/posts/searching-packs/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/searching-packs/</guid>
+      <guid>http://localhost:1313/blog/posts/searching-packs/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/searching-packs/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/posts/searching-packs/featured.webp" />
     </item>
     
     <item>
       <title>The Black Flame Ninetales</title>
-      <link>https://pokiplanet.com/blog/posts/the-black-flame-ninetales/</link>
+      <link>http://localhost:1313/blog/posts/the-black-flame-ninetales/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/the-black-flame-ninetales/</guid>
+      <guid>http://localhost:1313/blog/posts/the-black-flame-ninetales/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/the-black-flame-ninetales/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/posts/the-black-flame-ninetales/featured.webp" />
     </item>
     
     <item>
       <title>Pulling a Signature from a Pokémon Card</title>
-      <link>https://pokiplanet.com/blog/posts/pulling-a-signature/</link>
+      <link>http://localhost:1313/blog/posts/pulling-a-signature/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/pulling-a-signature/</guid>
+      <guid>http://localhost:1313/blog/posts/pulling-a-signature/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/pulling-a-signature/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/posts/pulling-a-signature/featured.webp" />
+    </item>
+    
+    <item>
+      <title>[WIP] Collection Thread</title>
+      <link>http://localhost:1313/blog/posts/collection/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>http://localhost:1313/blog/posts/collection/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/posts/collection/featured.webp" />
     </item>
     
     <item>
       <title>The Charizard Phenomenon</title>
-      <link>https://pokiplanet.com/blog/posts/the-charizard-phenomenon/</link>
-      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/blog/posts/the-charizard-phenomenon/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/the-charizard-phenomenon/</guid>
+      <guid>http://localhost:1313/blog/posts/the-charizard-phenomenon/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/the-charizard-phenomenon/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/posts/the-charizard-phenomenon/featured.webp" />
     </item>
     
   </channel>

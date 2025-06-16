@@ -3,55 +3,73 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://pokiplanet.com/blog/posts/rayquaza-metal-case/</loc>
+    <loc>http://localhost:1313/blog/posts/collection-update-2/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/posts/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/posts/e4-art-contest-2025/</loc>
+    <lastmod>2025-06-08T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/posts/rayquaza-metal-case/</loc>
     <lastmod>2025-06-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pokiplanet.com/blog/</loc>
-    <lastmod>2025-06-05T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pokiplanet.com/blog/posts/</loc>
-    <lastmod>2025-06-05T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pokiplanet.com/blog/posts/collection-update-1/</loc>
+    <loc>http://localhost:1313/blog/posts/collection/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pokiplanet.com/blog/posts/inside-dp-trainer-kit/</loc>
+    <loc>http://localhost:1313/blog/posts/collection-update-1/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/posts/inside-dp-trainer-kit/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pokiplanet.com/blog/posts/searching-packs/</loc>
+    <loc>http://localhost:1313/blog/posts/searching-packs/</loc>
     <lastmod>2025-04-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pokiplanet.com/blog/posts/the-black-flame-ninetales/</loc>
+    <loc>http://localhost:1313/blog/posts/the-black-flame-ninetales/</loc>
     <lastmod>2025-04-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pokiplanet.com/blog/posts/pulling-a-signature/</loc>
+    <loc>http://localhost:1313/blog/posts/pulling-a-signature/</loc>
     <lastmod>2025-03-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pokiplanet.com/blog/posts/the-charizard-phenomenon/</loc>
+    <loc>http://localhost:1313/blog/posts/the-charizard-phenomenon/</loc>
     <lastmod>2025-03-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
