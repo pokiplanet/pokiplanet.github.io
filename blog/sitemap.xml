@@ -45,6 +45,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://pokiplanet.com/blog/posts/collection/</loc>
+    <lastmod>2025-04-16T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://pokiplanet.com/blog/posts/the-black-flame-ninetales/</loc>
     <lastmod>2025-04-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -53,12 +59,6 @@
   <url>
     <loc>https://pokiplanet.com/blog/posts/pulling-a-signature/</loc>
     <lastmod>2025-03-24T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pokiplanet.com/blog/posts/collection/</loc>
-    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
