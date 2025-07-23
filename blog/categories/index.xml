@@ -9,7 +9,17 @@
     <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Tue, 22 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Collection</title>
+      <link>https://pokiplanet.com/blog/categories/collection/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/categories/collection/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Blog</title>
@@ -17,16 +27,6 @@
       <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/categories/blog/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Collection</title>
-      <link>https://pokiplanet.com/blog/categories/collection/</link>
-      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/categories/collection/</guid>
       <description></description>
       
     </item>
