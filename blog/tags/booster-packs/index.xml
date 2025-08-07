@@ -21,15 +21,5 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/inside-dp-trainer-kit/featured.webp" />
     </item>
     
-    <item>
-      <title>Searching Sealed Pokémon Booster Packs</title>
-      <link>https://pokiplanet.com/blog/posts/searching-packs/</link>
-      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/searching-packs/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/searching-packs/featured.webp" />
-    </item>
-    
   </channel>
 </rss>

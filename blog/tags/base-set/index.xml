@@ -31,15 +31,5 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/the-black-flame-ninetales/featured.webp" />
     </item>
     
-    <item>
-      <title>The Charizard Phenomenon</title>
-      <link>https://pokiplanet.com/blog/posts/the-charizard-phenomenon/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/the-charizard-phenomenon/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/the-charizard-phenomenon/featured.webp" />
-    </item>
-    
   </channel>
 </rss>

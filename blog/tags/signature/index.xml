@@ -21,15 +21,5 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/collection-update-7/featured.webp" />
     </item>
     
-    <item>
-      <title>Pulling a Signature from a Pokémon Card</title>
-      <link>https://pokiplanet.com/blog/posts/pulling-a-signature/</link>
-      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/pulling-a-signature/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/pulling-a-signature/featured.webp" />
-    </item>
-    
   </channel>
 </rss>
