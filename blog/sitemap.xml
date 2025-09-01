@@ -4,13 +4,19 @@
 
   <url>
     <loc>https://pokiplanet.com/blog/</loc>
-    <lastmod>2025-08-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pokiplanet.com/blog/posts/</loc>
-    <lastmod>2025-08-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/posts/collection-update-9/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
