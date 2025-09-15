@@ -3,19 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://pokiplanet.com/blog/posts/collection/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://pokiplanet.com/blog/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pokiplanet.com/blog/posts/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/posts/collection-update-15/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/posts/collection-update-14/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/posts/collection-update-13/</loc>
+    <lastmod>2025-09-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/posts/collection-update-12/</loc>
+    <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/posts/collection/</loc>
     <lastmod>2025-09-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
