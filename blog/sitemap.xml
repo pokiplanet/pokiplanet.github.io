@@ -3,6 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://pokiplanet.com/blog/posts/collection/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://pokiplanet.com/blog/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -35,12 +41,6 @@
   <url>
     <loc>https://pokiplanet.com/blog/posts/collection-update-12/</loc>
     <lastmod>2025-09-12T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pokiplanet.com/blog/posts/collection/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
