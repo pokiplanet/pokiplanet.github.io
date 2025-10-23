@@ -9,22 +9,12 @@
     <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Fri, 17 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>History</title>
-      <link>https://pokiplanet.com/blog/tags/history/</link>
-      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/history/</guid>
-      <description></description>
-      
-    </item>
+    <lastBuildDate>Thu, 23 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Japanese Promo</title>
       <link>https://pokiplanet.com/blog/tags/japanese-promo/</link>
-      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Oct 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/japanese-promo/</guid>
       <description></description>
@@ -34,7 +24,7 @@
     <item>
       <title>PSA</title>
       <link>https://pokiplanet.com/blog/tags/psa/</link>
-      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Oct 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/psa/</guid>
       <description></description>
@@ -44,7 +34,7 @@
     <item>
       <title>Vintage</title>
       <link>https://pokiplanet.com/blog/tags/vintage/</link>
-      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Oct 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/vintage/</guid>
       <description></description>
@@ -54,9 +44,19 @@
     <item>
       <title>WOTC</title>
       <link>https://pokiplanet.com/blog/tags/wotc/</link>
-      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Oct 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/wotc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://pokiplanet.com/blog/tags/history/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/history/</guid>
       <description></description>
       
     </item>
