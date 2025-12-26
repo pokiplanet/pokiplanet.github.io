@@ -9,12 +9,12 @@
     <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Japanese Promo</title>
       <link>https://pokiplanet.com/blog/tags/japanese-promo/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/japanese-promo/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>PSA</title>
       <link>https://pokiplanet.com/blog/tags/psa/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/psa/</guid>
       <description></description>
@@ -34,7 +34,7 @@
     <item>
       <title>Vintage</title>
       <link>https://pokiplanet.com/blog/tags/vintage/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/vintage/</guid>
       <description></description>
@@ -44,9 +44,49 @@
     <item>
       <title>WOTC</title>
       <link>https://pokiplanet.com/blog/tags/wotc/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/wotc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>E4</title>
+      <link>https://pokiplanet.com/blog/tags/e4/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/e4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>EliteFourum</title>
+      <link>https://pokiplanet.com/blog/tags/elitefourum/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/elitefourum/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Event</title>
+      <link>https://pokiplanet.com/blog/tags/event/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/event/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Secret Santa</title>
+      <link>https://pokiplanet.com/blog/tags/secret-santa/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/secret-santa/</guid>
       <description></description>
       
     </item>
@@ -67,16 +107,6 @@
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/151c-leak/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>EliteFourum</title>
-      <link>https://pokiplanet.com/blog/tags/elitefourum/</link>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/elitefourum/</guid>
       <description></description>
       
     </item>
@@ -117,16 +147,6 @@
       <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/contest/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>E4</title>
-      <link>https://pokiplanet.com/blog/tags/e4/</link>
-      <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/e4/</guid>
       <description></description>
       
     </item>
