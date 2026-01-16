@@ -9,16 +9,26 @@
     <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2025 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[WIP] My Personal Collection</title>
       <link>https://pokiplanet.com/blog/posts/collection/</link>
-      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/posts/collection/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/collection/featured.webp" />
+    </item>
+    
+    <item>
+      <title>Drifblim FB Tournament Prize</title>
+      <link>https://pokiplanet.com/blog/posts/beat-of-the-frontier-drifblim-fb/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/posts/beat-of-the-frontier-drifblim-fb/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/beat-of-the-frontier-drifblim-fb/featured.webp" />
     </item>
     
     <item>
@@ -42,7 +52,7 @@
     </item>
     
     <item>
-      <title>PSA 9 CD Promo Cool Porygon</title>
+      <title>CD Promo Cool Porygon</title>
       <link>https://pokiplanet.com/blog/posts/cd-promo-cool-porygon/</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -52,7 +62,7 @@
     </item>
     
     <item>
-      <title>PSA 6 Champion Road 2000 Trio</title>
+      <title>Champion Road 2000 Trio</title>
       <link>https://pokiplanet.com/blog/posts/champion-road-2000-trio/</link>
       <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -62,7 +72,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Fan Club Piplup</title>
+      <title>Fan Club Piplup</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-19/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -72,7 +82,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Fan Club Chimchar</title>
+      <title>Fan Club Chimchar</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-18/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -82,7 +92,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Grand Party Trainer Certification Card</title>
+      <title>Grand Party Trainer Certification Card</title>
       <link>https://pokiplanet.com/blog/posts/grand-party-trainer/</link>
       <pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -102,7 +112,7 @@
     </item>
     
     <item>
-      <title>PSA 9 __’s Kyogre Play Promo</title>
+      <title>__’s Kyogre Play Promo</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-17/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -112,7 +122,7 @@
     </item>
     
     <item>
-      <title>PSA 10 Dusknoir Spring Battle Road</title>
+      <title>Dusknoir Spring Battle Road</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-16/</link>
       <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -122,7 +132,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Fan Club Darkrai</title>
+      <title>Fan Club Darkrai</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-15/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -132,7 +142,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Fan Club Palkia</title>
+      <title>Fan Club Palkia</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-14/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -142,7 +152,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Fan Club Dialga</title>
+      <title>Fan Club Dialga</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-13/</link>
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -152,7 +162,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Fan Club Turtwig</title>
+      <title>Fan Club Turtwig</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-12/</link>
       <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -162,7 +172,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Armor Fossil Spring Battle Road</title>
+      <title>Armor Fossil Spring Battle Road</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-11/</link>
       <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -172,7 +182,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Buneary Collection Challenge Event</title>
+      <title>Buneary Collection Challenge Event</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-10/</link>
       <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -182,7 +192,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Houndour Reviving Legends Prize</title>
+      <title>Houndour Reviving Legends Prize</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-9/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -192,7 +202,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Teddiursa HG &amp; SS Release Campaign</title>
+      <title>Teddiursa HG &amp; SS Release Campaign</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-8/</link>
       <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -212,7 +222,7 @@
     </item>
     
     <item>
-      <title>PSA AUTO 10 Veronica Taylor Signed Pikachu</title>
+      <title>Veronica Taylor Signed Pikachu</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-7/</link>
       <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -222,7 +232,7 @@
     </item>
     
     <item>
-      <title>PSA 10 Lopunny Collection Challenge Event</title>
+      <title>Lopunny Collection Challenge Event</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-6/</link>
       <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -232,7 +242,7 @@
     </item>
     
     <item>
-      <title>PSA 9 Venusaur Base Set Holo</title>
+      <title>Venusaur Base Set Holo</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-5/</link>
       <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -242,7 +252,7 @@
     </item>
     
     <item>
-      <title>PSA 10 Dragonite FB Tournament Prize</title>
+      <title>Dragonite FB Tournament Prize</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-4a/</link>
       <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -252,7 +262,7 @@
     </item>
     
     <item>
-      <title>PSA 10 Cresselia Daisuki Club Super Rank Prize</title>
+      <title>Cresselia Daisuki Club Super Rank Prize</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-3/</link>
       <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -262,7 +272,7 @@
     </item>
     
     <item>
-      <title>PSA 10 Fan Club Manaphy</title>
+      <title>Fan Club Manaphy</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-2/</link>
       <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
@@ -282,7 +292,7 @@
     </item>
     
     <item>
-      <title>PSA 10 Battle Tower Tournament Prize</title>
+      <title>Battle Tower Tournament Prize</title>
       <link>https://pokiplanet.com/blog/posts/collection-update-1/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
