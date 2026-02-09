@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ポキプラネットのブログ</title>
+    <link>https://pokiplanet.com/blog/ja/tags/</link>
+    <description>Recent content in Tags on ポキプラネットのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <managingEditor>info@pokiplanet.com (ポキプラネットのブログ)</managingEditor>
+    <webMaster>info@pokiplanet.com (ポキプラネットのブログ)</webMaster>
+    <copyright>© 2026 ポキプラネット。無断転載を禁じます</copyright>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/ja/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PSA</title>
+      <link>https://pokiplanet.com/blog/ja/tags/psa/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
+      <guid>https://pokiplanet.com/blog/ja/tags/psa/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>日本のプロモーション</title>
+      <link>https://pokiplanet.com/blog/ja/tags/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
+      <guid>https://pokiplanet.com/blog/ja/tags/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>歴史</title>
+      <link>https://pokiplanet.com/blog/ja/tags/%E6%AD%B4%E5%8F%B2/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
+      <guid>https://pokiplanet.com/blog/ja/tags/%E6%AD%B4%E5%8F%B2/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
