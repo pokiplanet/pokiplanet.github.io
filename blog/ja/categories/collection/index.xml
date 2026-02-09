@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collection on ポキプラネットのブログ</title>
+    <link>https://pokiplanet.com/blog/ja/categories/collection/</link>
+    <description>Recent content in Collection on ポキプラネットのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <managingEditor>info@pokiplanet.com (ポキプラネットのブログ)</managingEditor>
+    <webMaster>info@pokiplanet.com (ポキプラネットのブログ)</webMaster>
+    <copyright>© 2026 ポキプラネット。無断転載を禁じます</copyright>
+    <lastBuildDate>Thu, 11 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/ja/categories/collection/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>チャレンジプラザ ワッフル</title>
+      <link>https://pokiplanet.com/blog/ja/posts/challenge-plaza-wobbuffet/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
+      <guid>https://pokiplanet.com/blog/ja/posts/challenge-plaza-wobbuffet/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/challenge-plaza-wobbuffet/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>

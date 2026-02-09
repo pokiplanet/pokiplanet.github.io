@@ -50,4 +50,52 @@
       href="https://pokiplanet.com/blog/ja/"
     />
   </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/challenge-plaza-wobbuffet/</loc>
+    <lastmod>2025-12-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/challenge-plaza-wobbuffet/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/challenge-plaza-wobbuffet/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/cd-promo-cool-porygon/</loc>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/cd-promo-cool-porygon/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/cd-promo-cool-porygon/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/champion-road-2000-trio/</loc>
+    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/champion-road-2000-trio/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/champion-road-2000-trio/"
+    />
+  </url>
 </urlset>

@@ -21,5 +21,35 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/beat-of-the-frontier-drifblim-fb/featured.webp" />
     </item>
     
+    <item>
+      <title>チャレンジプラザ ワッフル</title>
+      <link>https://pokiplanet.com/blog/ja/posts/challenge-plaza-wobbuffet/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
+      <guid>https://pokiplanet.com/blog/ja/posts/challenge-plaza-wobbuffet/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/challenge-plaza-wobbuffet/featured.webp" />
+    </item>
+    
+    <item>
+      <title>CDプロモ クールポリゴン</title>
+      <link>https://pokiplanet.com/blog/ja/posts/cd-promo-cool-porygon/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
+      <guid>https://pokiplanet.com/blog/ja/posts/cd-promo-cool-porygon/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/cd-promo-cool-porygon/featured.webp" />
+    </item>
+    
+    <item>
+      <title>チャンピオンロード2000トリオ</title>
+      <link>https://pokiplanet.com/blog/ja/posts/champion-road-2000-trio/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
+      <guid>https://pokiplanet.com/blog/ja/posts/champion-road-2000-trio/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/champion-road-2000-trio/featured.webp" />
+    </item>
+    
   </channel>
 </rss>
