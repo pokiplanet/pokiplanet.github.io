@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://pokiplanet.com/blog/ja/posts/</loc>
-    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-25T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -16,6 +16,38 @@
       rel="alternate"
       hreflang="ja"
       href="https://pokiplanet.com/blog/ja/posts/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/</loc>
+    <lastmod>2026-01-25T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/classroom-prize-raichu/</loc>
+    <lastmod>2026-01-25T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/classroom-prize-raichu/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/classroom-prize-raichu/"
     />
   </url>
   <url>
@@ -35,19 +67,19 @@
     />
   </url>
   <url>
-    <loc>https://pokiplanet.com/blog/ja/</loc>
-    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+    <loc>https://pokiplanet.com/blog/ja/posts/e4-secret-santa-2025/</loc>
+    <lastmod>2025-12-25T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://pokiplanet.com/blog/"
+      href="https://pokiplanet.com/blog/posts/e4-secret-santa-2025/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="ja"
-      href="https://pokiplanet.com/blog/ja/"
+      href="https://pokiplanet.com/blog/ja/posts/e4-secret-santa-2025/"
     />
   </url>
   <url>
@@ -96,6 +128,54 @@
       rel="alternate"
       hreflang="ja"
       href="https://pokiplanet.com/blog/ja/posts/champion-road-2000-trio/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/e4-art-contest-2025/</loc>
+    <lastmod>2025-08-08T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/e4-art-contest-2025/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/e4-art-contest-2025/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/collection-update-2/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/collection-update-2/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/collection-update-2/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/collection-update-1/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/collection-update-1/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/collection-update-1/"
     />
   </url>
 </urlset>

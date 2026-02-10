@@ -9,12 +9,12 @@
     <managingEditor>info@pokiplanet.com (ポキプラネットのブログ)</managingEditor>
     <webMaster>info@pokiplanet.com (ポキプラネットのブログ)</webMaster>
     <copyright>© 2026 ポキプラネット。無断転載を禁じます</copyright>
-    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/ja/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/ja/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>コレクション</title>
       <link>https://pokiplanet.com/blog/ja/categories/%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/</link>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
       <guid>https://pokiplanet.com/blog/ja/categories/%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/</guid>
       <description></description>
@@ -22,11 +22,11 @@
     </item>
     
     <item>
-      <title>Collection</title>
-      <link>https://pokiplanet.com/blog/ja/categories/collection/</link>
-      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <title>ブログ</title>
+      <link>https://pokiplanet.com/blog/ja/categories/%E3%83%96%E3%83%AD%E3%82%B0/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
-      <guid>https://pokiplanet.com/blog/ja/categories/collection/</guid>
+      <guid>https://pokiplanet.com/blog/ja/categories/%E3%83%96%E3%83%AD%E3%82%B0/</guid>
       <description></description>
       
     </item>
