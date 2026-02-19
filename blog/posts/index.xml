@@ -9,16 +9,16 @@
     <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2026 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>My Collection</title>
-      <link>https://pokiplanet.com/blog/posts/collection/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <title>Crossing the Pond: A Transatlantic Trade</title>
+      <link>https://pokiplanet.com/blog/posts/crossing-the-pond/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/collection/</guid>
+      <guid>https://pokiplanet.com/blog/posts/crossing-the-pond/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/collection/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/crossing-the-pond/featured.webp" />
     </item>
     
     <item>
@@ -329,6 +329,16 @@
       <guid>https://pokiplanet.com/blog/posts/the-black-flame-ninetales/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/the-black-flame-ninetales/featured.webp" />
+    </item>
+    
+    <item>
+      <title>My Collection</title>
+      <link>https://pokiplanet.com/blog/posts/collection/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/posts/collection/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/collection/featured.webp" />
     </item>
     
   </channel>

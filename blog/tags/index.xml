@@ -9,44 +9,44 @@
     <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2026 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Japanese Promo</title>
-      <link>https://pokiplanet.com/blog/tags/japanese-promo/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <title>E4</title>
+      <link>https://pokiplanet.com/blog/tags/e4/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/japanese-promo/</guid>
+      <guid>https://pokiplanet.com/blog/tags/e4/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>PSA</title>
-      <link>https://pokiplanet.com/blog/tags/psa/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <title>EliteFourum</title>
+      <link>https://pokiplanet.com/blog/tags/elitefourum/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/psa/</guid>
+      <guid>https://pokiplanet.com/blog/tags/elitefourum/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Vintage</title>
-      <link>https://pokiplanet.com/blog/tags/vintage/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <title>Event</title>
+      <link>https://pokiplanet.com/blog/tags/event/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/vintage/</guid>
+      <guid>https://pokiplanet.com/blog/tags/event/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>WOTC</title>
-      <link>https://pokiplanet.com/blog/tags/wotc/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <title>Trade</title>
+      <link>https://pokiplanet.com/blog/tags/trade/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/wotc/</guid>
+      <guid>https://pokiplanet.com/blog/tags/trade/</guid>
       <description></description>
       
     </item>
@@ -62,31 +62,21 @@
     </item>
     
     <item>
-      <title>E4</title>
-      <link>https://pokiplanet.com/blog/tags/e4/</link>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <title>Japanese Promo</title>
+      <link>https://pokiplanet.com/blog/tags/japanese-promo/</link>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/e4/</guid>
+      <guid>https://pokiplanet.com/blog/tags/japanese-promo/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>EliteFourum</title>
-      <link>https://pokiplanet.com/blog/tags/elitefourum/</link>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <title>PSA</title>
+      <link>https://pokiplanet.com/blog/tags/psa/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/elitefourum/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Event</title>
-      <link>https://pokiplanet.com/blog/tags/event/</link>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/event/</guid>
+      <guid>https://pokiplanet.com/blog/tags/psa/</guid>
       <description></description>
       
     </item>
@@ -157,6 +147,16 @@
       <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/signature/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>WOTC</title>
+      <link>https://pokiplanet.com/blog/tags/wotc/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/wotc/</guid>
       <description></description>
       
     </item>
@@ -237,6 +237,16 @@
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/ninetales/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Vintage</title>
+      <link>https://pokiplanet.com/blog/tags/vintage/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/vintage/</guid>
       <description></description>
       
     </item>

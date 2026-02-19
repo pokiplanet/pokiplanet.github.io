@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trade on PokiPlanet Blog</title>
+    <link>https://pokiplanet.com/blog/tags/trade/</link>
+    <description>Recent content in Trade on PokiPlanet Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
+    <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
+    <copyright>© 2026 PokiPlanet. All rights reserved</copyright>
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/trade/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Crossing the Pond: A Transatlantic Trade</title>
+      <link>https://pokiplanet.com/blog/posts/crossing-the-pond/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/posts/crossing-the-pond/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/crossing-the-pond/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>
