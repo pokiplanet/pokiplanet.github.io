@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fakes on PokiPlanet Blog</title>
+    <link>https://pokiplanet.com/blog/tags/fakes/</link>
+    <description>Recent content in Fakes on PokiPlanet Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
+    <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
+    <copyright>© 2026 PokiPlanet. All rights reserved</copyright>
+    <lastBuildDate>Tue, 24 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/fakes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>1st Edition Base Set Fakes</title>
+      <link>https://pokiplanet.com/blog/posts/1st-edition-base-set-fakes/</link>
+      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/posts/1st-edition-base-set-fakes/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/1st-edition-base-set-fakes/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>
