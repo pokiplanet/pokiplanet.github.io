@@ -9,7 +9,57 @@
     <managingEditor>info@pokiplanet.com (The PokiPlanet Blog)</managingEditor>
     <webMaster>info@pokiplanet.com (The PokiPlanet Blog)</webMaster>
     <copyright>© 2026 PokiPlanet. All rights reserved</copyright>
-    <lastBuildDate>Tue, 24 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Auction</title>
+      <link>https://pokiplanet.com/blog/tags/auction/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/auction/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Base Set</title>
+      <link>https://pokiplanet.com/blog/tags/base-set/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/base-set/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Event</title>
+      <link>https://pokiplanet.com/blog/tags/event/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/event/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Market</title>
+      <link>https://pokiplanet.com/blog/tags/market/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/market/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sealed Products</title>
+      <link>https://pokiplanet.com/blog/tags/sealed-products/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
+      <guid>https://pokiplanet.com/blog/tags/sealed-products/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>1st Edition</title>
@@ -22,31 +72,11 @@
     </item>
     
     <item>
-      <title>Base Set</title>
-      <link>https://pokiplanet.com/blog/tags/base-set/</link>
-      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/base-set/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Fakes</title>
       <link>https://pokiplanet.com/blog/tags/fakes/</link>
       <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/fakes/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Sealed Products</title>
-      <link>https://pokiplanet.com/blog/tags/sealed-products/</link>
-      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/sealed-products/</guid>
       <description></description>
       
     </item>
@@ -67,16 +97,6 @@
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
       <guid>https://pokiplanet.com/blog/tags/elitefourum/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Event</title>
-      <link>https://pokiplanet.com/blog/tags/event/</link>
-      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/tags/event/</guid>
       <description></description>
       
     </item>

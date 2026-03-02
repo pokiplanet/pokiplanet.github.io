@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ベースセット on ポキプラネットのブログ</title>
+    <link>https://pokiplanet.com/blog/ja/tags/%E3%83%99%E3%83%BC%E3%82%B9%E3%82%BB%E3%83%83%E3%83%88/</link>
+    <description>Recent content in ベースセット on ポキプラネットのブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <managingEditor>info@pokiplanet.com (ポキプラネットのブログ)</managingEditor>
+    <webMaster>info@pokiplanet.com (ポキプラネットのブログ)</webMaster>
+    <copyright>© 2026 ポキプラネット。無断転載を禁じます</copyright>
+    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pokiplanet.com/blog/ja/tags/%E3%83%99%E3%83%BC%E3%82%B9%E3%82%BB%E3%83%83%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ポケモンデー30周年記念オークション</title>
+      <link>https://pokiplanet.com/blog/ja/posts/pokemon-day-30th-anniversary-auction/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <author>info@pokiplanet.com (ポキプラネットのブログ)</author>
+      <guid>https://pokiplanet.com/blog/ja/posts/pokemon-day-30th-anniversary-auction/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/pokemon-day-30th-anniversary-auction/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>
