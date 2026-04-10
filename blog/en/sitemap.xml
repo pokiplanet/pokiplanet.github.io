@@ -3,24 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://pokiplanet.com/blog/posts/bonds-to-the-end-of-time-luxray-gl/</loc>
-    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <loc>https://pokiplanet.com/blog/posts/cyrus-conspriacy-tournament-prize/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
-      href="https://pokiplanet.com/blog/ja/posts/bonds-to-the-end-of-time-luxray-gl/"
+      href="https://pokiplanet.com/blog/ja/posts/cyrus-conspriacy-tournament-prize/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://pokiplanet.com/blog/posts/bonds-to-the-end-of-time-luxray-gl/"
+      href="https://pokiplanet.com/blog/posts/cyrus-conspriacy-tournament-prize/"
     />
   </url>
   <url>
     <loc>https://pokiplanet.com/blog/</loc>
-    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -36,7 +36,7 @@
   </url>
   <url>
     <loc>https://pokiplanet.com/blog/posts/</loc>
-    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -48,6 +48,22 @@
       rel="alternate"
       hreflang="en"
       href="https://pokiplanet.com/blog/posts/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/posts/bonds-to-the-end-of-time-luxray-gl/</loc>
+    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/bonds-to-the-end-of-time-luxray-gl/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/bonds-to-the-end-of-time-luxray-gl/"
     />
   </url>
   <url>
