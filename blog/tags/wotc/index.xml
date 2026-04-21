@@ -23,12 +23,12 @@
     
     <item>
       <title>My Collection</title>
-      <link>https://pokiplanet.com/blog/posts/collection/</link>
+      <link>https://pokiplanet.com/blog/collection/</link>
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
       <author>info@pokiplanet.com (The PokiPlanet Blog)</author>
-      <guid>https://pokiplanet.com/blog/posts/collection/</guid>
+      <guid>https://pokiplanet.com/blog/collection/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/posts/collection/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pokiplanet.com/blog/collection/featured.webp" />
     </item>
     
   </channel>
