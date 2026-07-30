@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PokiPlanet, your ultimate destination for Pokémon card collecting! Explore the shop for rare and vintage Pokémon cards, stay updated with the blog on collection tips, card history, and the latest TCG trends. Whether you're a seasoned collector or just starting out, PokiPlanet is your go-to hub for all things Pokémon cards! 🃏✨ #PokemonCards #TCG">
     <meta name="keywords" content="PokiPlanet, Pokémon, Pokémon TCG, Pokémon Cards">
-    <title>PokiPlanet</title>
+    <title>PokiPlanet — The Vault for Graded &amp; Vintage Pokémon Cards</title>
     <meta property="og:title" content="PokiPlanet - Pokémon Card Collecting" />
     <meta property="og:description" content="Explore rare Pokémon cards, stay updated with collection tips, card history, and TCG trends. Your ultimate hub for all things Pokémon Cards!" />
     <meta property="og:image" content="https://pokiplanet.com/assets/img/og-card.webp" />
@@ -23,227 +23,316 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css" />
-    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
         :root {
-            --primary-yellow: #f0d240;
-            --pokemon-blue: #3b4cca;
-            --pokemon-red: #ff0000;
+            --ink: #14110f;
+            --ink-2: #1e1811;
+            --ink-3: #2a2119;
+            --parchment: #f5efe1;
+            --parchment-2: #ece0c4;
+            --stone: #5b5346;
+            --ember: #b6402a;
+            --ember-dim: #8f3220;
+            --gold: #c99a3d;
+            --gold-bright: #e0b657;
+            --foil-teal: #74d1c4;
+            --foil-violet: #b28ce8;
+            --foil-pink: #ef9fc0;
+            --accent: var(--gold);
         }
-        
+
+        * { box-sizing: border-box; }
+
         body {
-            font-family: 'Press Start 2P', cursive;
-            background-color: #f8f8f8;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--parchment);
+            color: var(--ink);
             overflow-x: hidden;
         }
 
         html {
-            scroll-padding-top: 20px; /* Adds 20px space from the top when scrolling */
-            scroll-behavior: smooth;  /* Optional: smooth scroll */
-        }
-        
-        .pokemon-font {
-            font-family: 'Pokemon Solid', sans-serif;
-            letter-spacing: 4px;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, #f0d240 0%, #3b4cca 100%);
-        }
-        
-        .group:hover .group-hover-scale {
-            transform: scale(1.1);
+            scroll-behavior: smooth;
         }
 
-        .card-hover:hover {
-            transform: translateY(-10px) rotate(2deg);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }   
+        h1, h2, h3 {
+            font-family: 'Fraunces', serif;
+            letter-spacing: -0.01em;
+        }
 
-        .group {
+        .eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            font-size: 0.68rem;
+            font-weight: 500;
+        }
+
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        /* ---------- Foil / holo signature treatment ---------- */
+        .foil-text {
+            background: linear-gradient(100deg, var(--foil-teal), var(--foil-violet) 35%, var(--foil-pink) 55%, var(--gold-bright) 75%, var(--foil-teal));
+            background-size: 300% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: foilShift 10s ease infinite;
+        }
+
+        @keyframes foilShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .slab-frame {
             position: relative;
+            padding: 14px;
+            border-radius: 22px;
+            background: linear-gradient(120deg, var(--foil-teal), var(--foil-violet), var(--foil-pink), var(--gold-bright), var(--foil-teal));
+            background-size: 320% 320%;
+            animation: foilShift 9s ease infinite;
+            box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
         }
-    
+
+        .slab-frame-inner {
+            background: var(--ink-2);
+            border-radius: 14px;
+            padding: 22px 18px 26px;
+        }
+
+        .slab-label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4px 14px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid rgba(245,239,225,0.15);
+        }
+
+        /* ---------- Header ---------- */
+        header {
+            background: var(--parchment);
+            border-bottom: 1px solid rgba(20,17,15,0.08);
+        }
+
+        .nav-link {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--stone);
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0; bottom: 0;
+            width: 0%;
+            height: 1px;
+            background: var(--ember);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover { color: var(--ink); }
+        .nav-link:hover::after { width: 100%; }
+
+        /* ---------- Buttons ---------- */
+        .btn-ember {
+            background: var(--ember);
+            color: var(--parchment);
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background 0.25s ease, transform 0.25s ease;
+        }
+        .btn-ember:hover { background: var(--ember-dim); transform: translateY(-2px); }
+
+        .btn-foil {
+            position: relative;
+            background: linear-gradient(100deg, var(--foil-teal), var(--foil-violet), var(--foil-pink), var(--gold-bright));
+            background-size: 300% auto;
+            color: var(--ink);
+            font-weight: 700;
+            border-radius: 4px;
+            animation: foilShift 6s ease infinite;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .btn-foil:hover { transform: translateY(-2px); box-shadow: 0 12px 24px -8px rgba(178,140,232,0.5); }
+
+        .btn-outline {
+            border: 1px solid var(--ink);
+            color: var(--ink);
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.25s ease;
+        }
+        .btn-outline:hover { background: var(--ink); color: var(--parchment); }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            position: relative;
+            background: radial-gradient(ellipse 80% 60% at 50% -10%, var(--ink-3), var(--ink)), var(--ink);
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: -20%;
+            background: radial-gradient(circle at 28% 25%, var(--accent) 0%, transparent 55%);
+            opacity: 0.22;
+            filter: blur(70px);
+            transition: background 0.7s ease;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(245,239,225,0.05) 1px, transparent 1px);
+            background-size: 3px 3px;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .type-fire     { --accent: #e07a4a; }
+        .type-water    { --accent: #5aa9d6; }
+        .type-grass    { --accent: #7cb87a; }
+        .type-electric { --accent: #e9c94a; }
+        .type-psychic  { --accent: #c98fd6; }
+        .type-fighting { --accent: #cf8a4a; }
+        .type-normal   { --accent: #cdbfa8; }
+        .type-trainer  { --accent: #9ab0c9; }
+
+        .hero-content { position: relative; z-index: 1; }
+
+        .group:hover .group-hover-scale { transform: scale(1.08); }
+        .card-hover:hover {
+            transform: translateY(-8px) rotate(1deg);
+        }
+        .group { position: relative; }
+
         .transform {
             transform: translateX(var(--transform-translate-x, 0)) translateY(var(--transform-translate-y, 0)) rotate(var(--transform-rotate, 0)) skewX(var(--transform-skew-x, 0)) skewY(var(--transform-skew-y, 0)) scaleX(var(--transform-scale-x, 1)) scaleY(var(--transform-scale-y, 1));
         }
-    
-        .transition-transform {
-            transition-property: transform;
-        }
-    
-        .duration-500 {
-            transition-duration: 500ms;
-        }
-    
-        .ease-in-out {
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        .transition-transform { transition-property: transform; }
+        .duration-500 { transition-duration: 500ms; }
+        .ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
         .swiper.mySwiper {
-            width: 327px;
-            height: 550px;
-            padding: 50px 0;
+            width: 260px;
+            height: 420px;
+            padding: 28px 0;
         }
-        
         .swiper.mySwiper .swiper-slide {
             position: relative;
-            border-radius: 10px;
+            border-radius: 12px;
             user-select: none;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-        }
-        
-        .type-fire {
-            background: linear-gradient(45deg, #d87c3d, #f3e0c7, #d87c3d), radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 80%);
-        }
-        
-        .type-water {
-            background: linear-gradient(45deg, #5dacde, #e0f1ff, #5dacde), radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 80%);
-        }
-        
-        .type-grass {
-            background: linear-gradient(45deg, #7ebe50, #e8f5d8, #7ebe50), radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 80%);
-        }
-        
-        .type-electric {
-            background: linear-gradient(45deg, #f3d368, #fff8e0, #f3d368),  radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 80%);
-        }
-        
-        .type-psychic {
-            background: linear-gradient(45deg, #c87dc6, #f3e0f3, #c87dc6), radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 80%);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
         }
 
-        .type-fighting {
-            background: linear-gradient(45deg, #e29341, #ffefcd, #e29341), radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 80%);
-        }
-
-        .type-normal {
-            background: linear-gradient(45deg, #e0d5c6, #f9f4ee, #e0d5c6), radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 80%);
-        }
-
-        .type-trainer {
-        background: linear-gradient(45deg, #847c84, #f9f4ee, #939594), radial-gradient(circle, rgba(117,126,125,0.4) 20%, transparent 80%);
-        }
-        
-        .hamburger {
-            cursor: pointer;
-            width: 24px;
-            height: 24px;
-            transition: all 0.25s;
-            position: relative;
-        }
-        
-        .hamburger-top,
-        .hamburger-middle,
-        .hamburger-bottom {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 24px;
-            height: 2px;
-            background: #000;
-            transform: rotate(0);
-            transition: all 0.5s;
-        }
-        
-        .hamburger-middle {
-            transform: translateY(7px);
-        }
-        
-        .hamburger-bottom {
-            transform: translateY(14px);
-        }
-        
-        .open .hamburger-top {
-            transform: rotate(45deg) translateY(6px) translate(6px);
-        }
-        
-        .open .hamburger-middle {
-            display: none;
-        }
-        
-        .open .hamburger-bottom {
-            transform: rotate(-45deg) translateY(6px) translate(-6px);
-        }
-        
-        .mobile-menu {
-            max-height: 0;
+        /* ---------- Shop: collector slabs ---------- */
+        .item-card {
+            background: var(--parchment);
+            border: 1px solid rgba(20,17,15,0.1);
+            border-radius: 4px;
             overflow: hidden;
-            transition: max-height 0.3s ease-out;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
-        
-        .mobile-menu.open {
-            max-height: 300px;
+        .item-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 40px -16px rgba(20,17,15,0.35);
         }
+        .item-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+        .item-top-bar { height: 4px; }
 
-        .blog-featured-card {
-            background-color: white;
-            border-radius: 0.75rem;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            overflow: hidden;
+        /* ---------- Reviews: authentication slips ---------- */
+        .cert-card {
+            background: var(--ink-2);
+            color: var(--parchment);
+            border-radius: 6px;
+            border: 1px solid rgba(245,239,225,0.08);
         }
-
-        .star-icon {
-            color: #FFD700;
-        }
-        
-        .swiper.testimonialSwiper .swiper-slide {
-            padding: 0 15px;
-        }
-        
+        .cert-card .star-icon { color: var(--gold-bright); letter-spacing: 2px; }
         .swiper-pagination-bullet {
-            width: 12px;
-            height: 12px;
-            background-color: #d1d5db;
+            width: 8px;
+            height: 8px;
+            background-color: rgba(20,17,15,0.25);
             opacity: 1;
         }
-        
-        .swiper-pagination-bullet-active {
-            background-color: #ef4444;
-        }
+        .swiper-pagination-bullet-active { background-color: var(--ember); }
 
         @media (max-width: 769px) {
-            .swiper.mySwiper {
-                width: 194px;
-                height: 370px;
-              }
-            
+            .swiper.mySwiper { width: 170px; height: 300px; }
             .swiper.mySwiper .swiper-slide {
                 transform: translate3d(0, 0, 0);
                 backface-visibility: hidden;
                 perspective: 1000;
                 will-change: transform, visibility, z-index;
-            } 
+            }
         }
 
+        /* ---------- Hamburger ---------- */
+        .hamburger { cursor: pointer; width: 24px; height: 24px; transition: all 0.25s; position: relative; }
+        .hamburger-top, .hamburger-middle, .hamburger-bottom {
+            position: absolute; top: 0; left: 0; width: 24px; height: 2px;
+            background: var(--ink); transform: rotate(0); transition: all 0.5s;
+        }
+        .hamburger-middle { transform: translateY(7px); }
+        .hamburger-bottom { transform: translateY(14px); }
+        .open .hamburger-top { transform: rotate(45deg) translateY(6px) translate(6px); }
+        .open .hamburger-middle { display: none; }
+        .open .hamburger-bottom { transform: rotate(-45deg) translateY(6px) translate(-6px); }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .mobile-menu.open { max-height: 300px; }
+
+        .blog-featured-card {
+            background-color: var(--parchment);
+            border: 1px solid rgba(20,17,15,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .divider-line { height: 1px; background: linear-gradient(90deg, transparent, rgba(245,239,225,0.2), transparent); }
+
+        .footer-link { color: rgba(245,239,225,0.5); transition: color 0.3s ease; }
+        .footer-link:hover { color: #ffffff; }
+
+        .input-vault { transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+        .input-vault:focus { outline: none; border-color: var(--gold-bright); box-shadow: 0 0 0 3px rgba(224,182,87,0.25); }
     </style>
 </head>
 <body class="relative">
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mr-3">
-                        <a href="https://pokiplanet.com">
-                        <img src="/assets/img/pokiplanet.webp">
-                    </div>
-                    <h1 class="text-2xl pokemon-font text-gray-800">PokiPlanet</h1>
-                        </a>
+                <div class="flex items-center min-w-0">
+                    <a href="https://pokiplanet.com" class="flex items-center min-w-0">
+                        <div class="w-9 h-9 sm:w-11 sm:h-11 bg-white border border-gray-200 rounded-full flex items-center justify-center mr-3 overflow-hidden flex-shrink-0">
+                            <img src="/assets/img/pokiplanet.webp" alt="PokiPlanet logo">
+                        </div>
+                        <div class="min-w-0">
+                            <h1 class="text-lg sm:text-xl font-semibold truncate" style="color: var(--ink); font-family:'Fraunces', serif;">PokiPlanet</h1>
+                            <p class="eyebrow hidden sm:block" style="color: var(--stone);">The Collector's Vault</p>
+                        </div>
+                    </a>
                 </div>
-                
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#shop" class="text-gray-800 hover:text-yellow-500 transition duration-300">Shop</a>
-                    <a href="#reviews" class="text-gray-800 hover:text-yellow-500 transition duration-300">Reviews</a>
-                    <a href="#blog" class="text-gray-800 hover:text-yellow-500 transition duration-300">Blog</a>
+
+                <nav class="hidden md:flex space-x-10 items-center">
+                    <a href="#shop" class="nav-link">Shop</a>
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                    <a href="#blog" class="nav-link">Blog</a>
                 </nav>
-                
+
                 <div class="md:hidden">
                     <button id="menu-btn" class="hamburger focus:outline-none">
                         <span class="hamburger-top"></span>
@@ -252,435 +341,415 @@
                     </button>
                 </div>
             </div>
-            
+
             <div id="menu" class="mobile-menu md:hidden">
-                <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
-                    <a href="#shop" class="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-yellow-400 rounded-md">Shop</a>
-                    <a href="#reviews" class="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-yellow-400 rounded-md">Reviews</a>
-                    <a href="#blog" class="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-yellow-400 rounded-md">Blog</a>
+                <div class="px-2 pt-4 pb-4 space-y-1 sm:px-3">
+                    <a href="#shop" class="nav-link block px-3 py-2">Shop</a>
+                    <a href="#reviews" class="nav-link block px-3 py-2">Reviews</a>
+                    <a href="#blog" class="nav-link block px-3 py-2">Blog</a>
                 </div>
             </div>
         </div>
     </header>
-    
-    <section class="hero min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div class="container mx-auto px-6 py-20 text-center">
-            <h1 class="text-4xl md:text-6xl pokemon-font text-gray-800 mb-6">PokiPlanet</h1>
-            <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
-                Your ultimate destination for Pokémon TCG treasures.
+
+    <section class="hero flex items-center justify-center relative overflow-hidden">
+        <div class="container mx-auto px-6 py-14 md:py-20 text-center hero-content">
+            <p class="eyebrow mb-4" style="color: var(--gold-bright);">Est.2015 — UK-Based Collector</p>
+            <h1 class="text-4xl md:text-6xl font-medium mb-4 foil-text" style="font-family:'Fraunces', serif;">PokiPlanet</h1>
+            <p class="text-base md:text-xl mb-10 max-w-2xl mx-auto" style="color: rgba(245,239,225,0.7);">
+                Graded slabs, sealed product, and vintage rarities — curated for collectors.
             </p>
-            
-            <div class="swiper mySwiper max-w-4xl mx-auto">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" data-type="fire">
-                        <div class="rounded-xl shadow-2xl overflow-hidden transform transition duration-500">
-                            <img src="/assets/img/1.webp" alt="Charizard" class="w-full h-full object-cover">
+
+            <div class="slab-frame max-w-sm mx-auto">
+                <div class="slab-frame-inner">
+                    <div class="slab-label">
+                        <span class="mono text-xs" style="color: rgba(245,239,225,0.5); letter-spacing:0.1em;">POKIPLANET</span>
+                        <span class="mono text-xs" style="color: rgba(245,239,225,0.5);">SHOWCASE</span>
+                    </div>
+                    <div class="swiper mySwiper mx-auto">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-type="electric">
+                                <div class="rounded-xl overflow-hidden transform transition duration-500">
+                                    <img src="/assets/img/1.webp" alt="Pikachu Illustrator" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-type="fire">
+                                <div class="rounded-xl overflow-hidden transform transition duration-500">
+                                    <img src="/assets/img/2.webp" alt="Charizard" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-type="trainer">
+                                <div class="rounded-xl overflow-hidden transform transition duration-500">
+                                    <img src="/assets/img/3.webp" alt="Grand Party" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-type="normal">
+                                <div class="rounded-xl overflow-hidden transform transition duration-500">
+                                    <img src="/assets/img/4.webp" alt="Lugia" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-type="electric">
+                                <div class="rounded-xl overflow-hidden transform transition duration-500">
+                                    <img src="/assets/img/5.webp" alt="kangaskhan" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-type="fire">
+                                <div class="rounded-xl overflow-hidden transform transition duration-500">
+                                    <img src="/assets/img/6.webp" alt="Rayquaza" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-type="trainer">
+                                <div class="rounded-xl overflow-hidden transform transition duration-500">
+                                    <img src="/assets/img/8.webp" alt="No.1 Trainer" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-type="psychic">
+                                <div class="rounded-xl overflow-hidden transform transition duration-500">
+                                    <img src="/assets/img/7.webp" alt="Shining Mew" class="w-full h-full object-cover">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide" data-type="trainer">
-                        <div class="rounded-xl shadow-2xl overflow-hidden transform transition duration-500">
-                            <img src="/assets/img/2.webp" alt="Blastoise" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-type="normal">
-                        <div class="rounded-xl shadow-2xl overflow-hidden transform transition duration-500">
-                            <img src="/assets/img/3.webp" alt="Pikachu" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-type="grass">
-                        <div class="rounded-xl shadow-2xl overflow-hidden transform transition duration-500">
-                            <img src="/assets/img/4.webp" alt="Mewtwo" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-type="psychic">
-                        <div class="rounded-xl shadow-2xl overflow-hidden transform transition duration-500">
-                            <img src="/assets/img/5.webp" alt="Extra" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-type="electric">
-                        <div class="rounded-xl shadow-2xl overflow-hidden transform transition duration-500">
-                            <img src="/assets/img/6.webp" alt="Extra" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-type="fighting">
-                        <div class="rounded-xl shadow-2xl overflow-hidden transform transition duration-500">
-                            <img src="/assets/img/8.webp" alt="Extra" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-type="water">
-                        <div class="rounded-xl shadow-2xl overflow-hidden transform transition duration-500">
-                            <img src="/assets/img/7.webp" alt="Extra" class="w-full h-full object-cover">
-                    </div>
-            </div> 
+                </div>
+            </div>
+            <p class="mono text-xs mt-6" style="color: rgba(245,239,225,0.35); letter-spacing:0.1em;">swipe or wait — the case rotates itself</p>
         </div>
     </section>
-    
-    <section id="shop" class="py-20 bg-gray-50">
+
+    <section id="shop" class="py-16 md:py-24" style="background: var(--parchment);">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl pokemon-font text-center text-gray-800 mb-4">Premium Selection</h2>
-            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">
-                From vintage classics to modern masterpieces, there’s something here for every type of collector.
+            <p class="eyebrow text-center mb-3" style="color: var(--ember);">The Catalog</p>
+            <h2 class="text-3xl md:text-4xl text-center mb-4" style="color: var(--ink);">Premium Selection</h2>
+            <p class="text-center max-w-2xl mx-auto mb-10 md:mb-16" style="color: var(--stone);">
+                From vintage classics to modern masterpieces.
             </p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 group">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="/assets/img/graded.webp" alt="Graded Card" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover-scale" />
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="item-card group">
+                    <div class="item-top-bar" style="background: var(--gold);"></div>
+                    <div class="overflow-hidden">
+                        <img src="/assets/img/graded.webp" alt="Graded Card" class="block w-full h-40 sm:h-48 object-cover transform transition-transform duration-500 ease-in-out group-hover-scale" />
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Elite Graded Cards</h3>
-                        <p class="text-gray-600 mb-4">
+                        <p class="item-tag mb-2" style="color: var(--gold);">Category 01 — Graded</p>
+                        <h3 class="text-xl font-semibold mb-2" style="color: var(--ink); font-family:'Fraunces', serif;">Elite Graded Cards</h3>
+                        <p class="mb-5 text-sm" style="color: var(--stone);">
                             Professionally graded cards with guaranteed authenticity and condition. Perfect for serious collectors.
                         </p>
-                        <a href="https://www.ebay.co.uk/usr/pokiplanet" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-6 rounded-full transition duration-300">
-                            View All
-                        </a>
+                        <a href="https://www.ebay.co.uk/usr/pokiplanet" class="inline-block btn-ember py-2 px-6">View All</a>
                     </div>
                 </div>
-                
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 group">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="/assets/img/sealed.webp" alt="Sealed Product" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover-scale" />
+
+                <div class="item-card group">
+                    <div class="item-top-bar" style="background: var(--foil-teal);"></div>
+                    <div class="overflow-hidden">
+                        <img src="/assets/img/sealed.webp" alt="Sealed Product" class="block w-full h-40 sm:h-48 object-cover transform transition-transform duration-500 ease-in-out group-hover-scale" />
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sealed Products</h3>
-                        <p class="text-gray-600 mb-4">
+                        <p class="item-tag mb-2" style="color: #3d8f82;">Category 02 — Sealed</p>
+                        <h3 class="text-xl font-semibold mb-2" style="color: var(--ink); font-family:'Fraunces', serif;">Sealed Products</h3>
+                        <p class="mb-5 text-sm" style="color: var(--stone);">
                             Factory-sealed booster boxes, tins, and elite trainer boxes. Experience the thrill of opening packs!
                         </p>
-                        <a href="https://www.ebay.co.uk/usr/pokiplanet" class="inline-block bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-6 rounded-full transition duration-300">
-                            View All
-                        </a>
+                        <a href="https://www.ebay.co.uk/usr/pokiplanet" class="inline-block btn-outline py-2 px-6">View All</a>
                     </div>
                 </div>
-                
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 group">
-                    <div class="relative h-48 overflow-hidden">
-                      <img src="/assets/img/vintage.webp" alt="Vintage Card"
-                           class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover-scale" />
+
+                <div class="item-card group">
+                    <div class="item-top-bar" style="background: var(--ember);"></div>
+                    <div class="overflow-hidden">
+                        <img src="/assets/img/vintage.webp" alt="Vintage Card" class="block w-full h-40 sm:h-48 object-cover transform transition-transform duration-500 ease-in-out group-hover-scale" />
                     </div>
                     <div class="p-6">
-                      <h3 class="text-xl font-bold text-gray-800 mb-2">Vintage Rarities</h3>
-                      <p class="text-gray-600 mb-4">
-                        Rare gems from the early days of Pokémon TCG, Own a piece of trading card history sought-after by thousands.
-                      </p>
-                      <a href="https://www.ebay.co.uk/usr/pokiplanet" class="inline-block bg-red-400 hover:bg-red-500 text-white font-bold py-2 px-6 rounded-full transition duration-300">
-                        View All
-                      </a>
+                        <p class="item-tag mb-2" style="color: var(--ember);">Category 03 — Vintage</p>
+                        <h3 class="text-xl font-semibold mb-2" style="color: var(--ink); font-family:'Fraunces', serif;">Vintage Rarities</h3>
+                        <p class="mb-5 text-sm" style="color: var(--stone);">
+                            Rare gems from the early days of Pokémon TCG. Own a piece of trading card history sought-after by thousands.
+                        </p>
+                        <a href="https://www.ebay.co.uk/usr/pokiplanet" class="inline-block btn-ember py-2 px-6" style="background: var(--ember);">View All</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="reviews" class="py-20 bg-white">
+
+    <section id="reviews" class="py-16 md:py-24" style="background: var(--ink);">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl pokemon-font text-center text-gray-800 mb-4">What Collectors Say</h2>
-            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+            <p class="eyebrow text-center mb-3" style="color: var(--gold-bright);">Authenticated Feedback</p>
+            <h2 class="text-3xl md:text-4xl text-center mb-4" style="color: var(--parchment);">What Collectors Say</h2>
+            <p class="text-center max-w-2xl mx-auto mb-8 md:mb-10" style="color: rgba(245,239,225,0.55);">
                 Trusted by Pokémon enthusiasts worldwide.
             </p>
-            <div class="flex items-center justify-center mb-8">
-                <div class="flex">
-                    <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                </div>
-                <span class="ml-2 text-gray-700 text-lg font-semibold">5/5 from hundreds of collectors</span>  
+            <div class="flex items-center justify-center mb-8 md:mb-10">
+                <span class="star-icon text-2xl" style="color: var(--gold-bright); letter-spacing: 3px;">★★★★★</span>
+                <span class="ml-3 mono text-sm" style="color: rgba(245,239,225,0.6);">5/5 FROM HUNDREDS OF COLLECTORS</span>
             </div>
             <div class="swiper testimonialSwiper relative max-w-6xl mx-auto">
                 <div class="swiper-wrapper pb-12">
                     <div class="swiper-slide px-2">
-                        <div class="testimonial-card bg-white rounded-xl shadow-lg p-6 h-full">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-lg font-semibold">hayleystuff4u</h3>
+                        <div class="testimonial-card cert-card p-6 h-full flex flex-col">
+                            <p class="mono text-xs mb-3" style="color: var(--gold-bright);">VERIFIED PURCHASE</p>
+                            <h3 class="text-base font-semibold mb-3">hayleystuff4u</h3>
+                            <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.75);">"Perfect 👍 Great item &amp; Fast Delivery A+++ 😊 Thank you 🙏"</p>
+                            <div class="mt-auto mb-3">
+                                <p class="mono text-xs mb-1" style="color: rgba(245,239,225,0.4);">Purchased:</p>
+                                <p class="text-sm" style="color: var(--foil-teal);">PSA 8 - Pokemon CD Promo Charizard 006 Japanese Holo 1998</p>
                             </div>
-                            <p class="text-gray-600 mb-4">"Perfect 👍 Great item & Fast Delivery A+++ 😊 Thank you 🙏"</p>
-                            <div class="mt-auto">
-                                <p class="text-sm font-medium text-gray-500">Purchased:</p>
-                                <p class="text-blue-600 font-medium text-sm">PSA 8 - Pokemon CD Promo Charizard 006 Japanese Holo 1998</p>
-                            </div>
-                            <span class="star-icon text-xl mr-2 flex items-center justify-center">★★★★★</span>
+                            <span class="star-icon text-lg flex items-center">★★★★★</span>
                         </div>
                     </div>
-                    
+
                     <div class="swiper-slide px-2">
-                        <div class="testimonial-card bg-white rounded-xl shadow-lg p-6 h-full">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-lg font-semibold">juliedunan-0</h3>
+                        <div class="testimonial-card cert-card p-6 h-full flex flex-col">
+                            <p class="mono text-xs mb-3" style="color: var(--gold-bright);">VERIFIED PURCHASE</p>
+                            <h3 class="text-base font-semibold mb-3">juliedunan-0</h3>
+                            <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.75);">"Item corresponding to the ad. Fast delivery and careful."</p>
+                            <div class="mt-auto mb-3">
+                                <p class="mono text-xs mb-1" style="color: rgba(245,239,225,0.4);">Purchased:</p>
+                                <p class="text-sm" style="color: var(--foil-teal);">PSA 8 - Shining Mew #151 CoroCoro Comics Promo</p>
                             </div>
-                            <p class="text-gray-600 mb-4">"Item corresponding to the ad. Fast delivery and careful."</p>
-                            <div class="mt-auto">
-                                <p class="text-sm font-medium text-gray-500">Purchased:</p>
-                                <p class="text-blue-600 font-medium text-sm">PSA 8 - Shining Mew #151 CoroCoro Comics Promo</p>
-                            </div>
-                            <span class="star-icon text-xl mr-2 flex items-center justify-center">★★★★★</span> 
+                            <span class="star-icon text-lg flex items-center">★★★★★</span>
                         </div>
                     </div>
-                    
+
                     <div class="swiper-slide px-2">
-                        <div class="testimonial-card bg-white rounded-xl shadow-lg p-6 h-full">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-lg font-semibold">crissm_87</h3>
+                        <div class="testimonial-card cert-card p-6 h-full flex flex-col">
+                            <p class="mono text-xs mb-3" style="color: var(--gold-bright);">VERIFIED PURCHASE</p>
+                            <h3 class="text-base font-semibold mb-3">crissm_87</h3>
+                            <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.75);">"Great seller. Arrived safely and on time. Thank you."</p>
+                            <div class="mt-auto mb-3">
+                                <p class="mono text-xs mb-1" style="color: rgba(245,239,225,0.4);">Purchased:</p>
+                                <p class="text-sm" style="color: var(--foil-teal);">CGC 8.5 - Eevee Black Star Promo #11</p>
                             </div>
-                            <p class="text-gray-600 mb-4">"Great seller. Arrived safely and on time. Thank you."</p>
-                            <div class="mt-auto">
-                                <p class="text-sm font-medium text-gray-500">Purchased:</p>
-                                <p class="text-blue-600 font-medium text-sm">CGC 8.5 - Eevee Black Star Promo #11</p>
-                            </div>
-                            <span class="star-icon text-xl mr-2 flex items-center justify-center">★★★★★</span>
+                            <span class="star-icon text-lg flex items-center">★★★★★</span>
                         </div>
                     </div>
-                    
+
                     <div class="swiper-slide px-2">
-                        <div class="testimonial-card bg-white rounded-xl shadow-lg p-6 h-full">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-lg font-semibold">premium tradingcardsuk</h3>
+                        <div class="testimonial-card cert-card p-6 h-full flex flex-col">
+                            <p class="mono text-xs mb-3" style="color: var(--gold-bright);">VERIFIED PURCHASE</p>
+                            <h3 class="text-base font-semibold mb-3">premium tradingcardsuk</h3>
+                            <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.75);">"Perfect seller, thanks 👍"</p>
+                            <div class="mt-auto mb-3">
+                                <p class="mono text-xs mb-1" style="color: rgba(245,239,225,0.4);">Purchased:</p>
+                                <p class="text-sm" style="color: var(--foil-teal);">PSA 9 - Sentret 022/L-P 2009 Holo Legend Battle Prize Promo</p>
                             </div>
-                            <p class="text-gray-600 mb-4">"Perfect seller, thanks 👍"</p>
-                            <div class="mt-auto">
-                                <p class="text-sm font-medium text-gray-500">Purchased:</p>
-                                <p class="text-blue-600 font-medium text-sm">PSA 9 - Sentret 022/L-P 2009 Holo Legend Battle Prize Promo</p>
-                            </div>
-                            <span class="star-icon text-xl mr-2 flex items-center justify-center">★★★★★</span>
+                            <span class="star-icon text-lg flex items-center">★★★★★</span>
                         </div>
                     </div>
-                    
+
                     <div class="swiper-slide px-2">
-                        <div class="testimonial-card bg-white rounded-xl shadow-lg p-6 h-full">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-lg font-semibold">johnny770_3</h3>
+                        <div class="testimonial-card cert-card p-6 h-full flex flex-col">
+                            <p class="mono text-xs mb-3" style="color: var(--gold-bright);">VERIFIED PURCHASE</p>
+                            <h3 class="text-base font-semibold mb-3">johnny770_3</h3>
+                            <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.75);">"AAA++ will definitely buy again."</p>
+                            <div class="mt-auto mb-3">
+                                <p class="mono text-xs mb-1" style="color: rgba(245,239,225,0.4);">Purchased:</p>
+                                <p class="text-sm" style="color: var(--foil-teal);">Sword &amp; Shield Darkness Ablaze Booster Box</p>
                             </div>
-                            <p class="text-gray-600 mb-4">"AAA++ will definitely buy again."</p>
-                            <div class="mt-auto">
-                                <p class="text-sm font-medium text-gray-500">Purchased:</p>
-                                <p class="text-blue-600 font-medium text-sm">Sword & Shield Darkness Ablaze Booster Box</p>
-                            </div>
-                            <span class="star-icon text-xl mr-2 flex items-center justify-center">★★★★★</span>
+                            <span class="star-icon text-lg flex items-center">★★★★★</span>
                         </div>
                     </div>
-                    
+
                     <div class="swiper-slide px-2">
-                        <div class="testimonial-card bg-white rounded-xl shadow-lg p-6 h-full">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-lg font-semibold">pal_version</h3>
+                        <div class="testimonial-card cert-card p-6 h-full flex flex-col">
+                            <p class="mono text-xs mb-3" style="color: var(--gold-bright);">VERIFIED PURCHASE</p>
+                            <h3 class="text-base font-semibold mb-3">pal_version</h3>
+                            <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.75);">"Very happy, thank you."</p>
+                            <div class="mt-auto mb-3">
+                                <p class="mono text-xs mb-1" style="color: rgba(245,239,225,0.4);">Purchased:</p>
+                                <p class="text-sm" style="color: var(--foil-teal);">Sword &amp; Shield Evolving Skies Booster Box</p>
                             </div>
-                            <p class="text-gray-600 mb-4">"Very happy, thank you."</p>
-                            <div class="mt-auto">
-                                <p class="text-sm font-medium text-gray-500">Purchased:</p>
-                                <p class="text-blue-600 font-medium text-sm">Sword & Shield Evolving Skies Booster Box</p>
-                            </div>
-                            <span class="star-icon text-xl mr-2 flex items-center justify-center">★★★★★</span>
+                            <span class="star-icon text-lg flex items-center">★★★★★</span>
                         </div>
                     </div>
-                    
+
                     <div class="swiper-slide px-2">
-                        <div class="testimonial-card bg-white rounded-xl shadow-lg p-6 h-full">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-lg font-semibold">lovetravel82</h3>
+                        <div class="testimonial-card cert-card p-6 h-full flex flex-col">
+                            <p class="mono text-xs mb-3" style="color: var(--gold-bright);">VERIFIED PURCHASE</p>
+                            <h3 class="text-base font-semibold mb-3">lovetravel82</h3>
+                            <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.75);">"Excellent service! Item was sold at a great price and was fast delivered."</p>
+                            <div class="mt-auto mb-3">
+                                <p class="mono text-xs mb-1" style="color: rgba(245,239,225,0.4);">Purchased:</p>
+                                <p class="text-sm" style="color: var(--foil-teal);">Hidden Fates Raichu Tin</p>
                             </div>
-                            <p class="text-gray-600 mb-4">"Excellent service! Item was sold at a great price and was fast delivered."</p>
-                            <div class="mt-auto">
-                                <p class="text-sm font-medium text-gray-500">Purchased:</p>
-                                <p class="text-blue-600 font-medium text-sm">Hidden Fates Raichu Tin</p>
-                            </div>
-                            <span class="star-icon text-xl mr-2 flex items-center justify-center">★★★★★</span>
+                            <span class="star-icon text-lg flex items-center">★★★★★</span>
                         </div>
                     </div>
-                    
+
                     <div class="swiper-slide px-2">
-                        <div class="testimonial-card bg-white rounded-xl shadow-lg p-6 h-full">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-lg font-semibold">kspokestop</h3>
+                        <div class="testimonial-card cert-card p-6 h-full flex flex-col">
+                            <p class="mono text-xs mb-3" style="color: var(--gold-bright);">VERIFIED PURCHASE</p>
+                            <h3 class="text-base font-semibold mb-3">kspokestop</h3>
+                            <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.75);">"The card arrived well before the estimated delivery date and was packaged really well."</p>
+                            <div class="mt-auto mb-3">
+                                <p class="mono text-xs mb-1" style="color: rgba(245,239,225,0.4);">Purchased:</p>
+                                <p class="text-sm" style="color: var(--foil-teal);">Snorlax XY179 Black Star Promo</p>
                             </div>
-                            <p class="text-gray-600 mb-4">"The card arrived well before the estimated delivery date and was packaged really well."</p>
-                            <div class="mt-auto">
-                                <p class="text-sm font-medium text-gray-500">Purchased:</p>
-                                <p class="text-blue-600 font-medium text-sm">Snorlax XY179 Black Star Promo</p>
-                            </div>
-                            <span class="star-icon text-xl mr-2 flex items-center justify-center">★★★★★</span>
+                            <span class="star-icon text-lg flex items-center">★★★★★</span>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="swiper-pagination mt-4"></div>
             </div>
         </div>
-        </section>
-    
-    <section id="blog" class="py-20 bg-gray-50 relative overflow-hidden">
+    </section>
+
+    <section id="blog" class="py-16 md:py-24 relative overflow-hidden" style="background: var(--parchment);">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-center">
                 <div class="md:w-1/2 mb-12 md:mb-0">
-                    <a href="/blog/"><h2 class="text-3xl md:text-4xl pokemon-font text-gray-800 mb-6 hover:text-yellow-400 transition duration-300">The PokiPlanet Blog</h2></a>
-                    <p class="text-gray-600 mb-8 max-w-lg">
-                        Dive into the blog for Pokemon TCG History, Research and more.
+                    <p class="eyebrow mb-3" style="color: var(--ember);">Field Notes</p>
+                    <a href="/blog/"><h2 class="text-3xl md:text-4xl mb-6 hover:opacity-70 transition duration-300" style="color: var(--ink);">The PokiPlanet Blog</h2></a>
+                    <p class="mb-8 max-w-lg" style="color: var(--stone);">
+                        Dive into the blog for Pokémon TCG history, research and more.
                     </p>
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="bg-yellow-400 p-3 rounded-full mr-4">
-                                <a href="/blog/tags/event/">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="5" width="18" height="16" rx="2" stroke-width="2"></rect><line x1="8" y1="3" x2="8" y2="7" stroke-width="2" stroke-linecap="round"></line><line x1="16" y1="3" x2="16" y2="7" stroke-width="2" stroke-linecap="round"></line><line x1="3" y1="11" x2="21" y2="11" stroke-width="2"></line><circle cx="8" cy="15" r="1" fill="currentColor"></circle><circle cx="12" cy="15" r="1" fill="currentColor"></circle><circle cx="16" cy="15" r="1" fill="currentColor"></circle>
-                                </svg>
-                                </a>
-                            </div>
+                            <a href="/blog/tags/event/" class="w-11 h-11 flex-shrink-0 rounded-full flex items-center justify-center mr-4" style="background: var(--ink);">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--gold-bright);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="5" width="18" height="16" rx="2" stroke-width="2"></rect><line x1="8" y1="3" x2="8" y2="7" stroke-width="2" stroke-linecap="round"></line><line x1="16" y1="3" x2="16" y2="7" stroke-width="2" stroke-linecap="round"></line><line x1="3" y1="11" x2="21" y2="11" stroke-width="2"></line><circle cx="8" cy="15" r="1" fill="currentColor"></circle><circle cx="12" cy="15" r="1" fill="currentColor"></circle><circle cx="16" cy="15" r="1" fill="currentColor"></circle></svg>
+                            </a>
                             <div>
-                                <a href="/blog/tags/event/"><h3 class="text-xl font-bold text-gray-800 mb-2 hover:text-yellow-400 transition duration-300">Community Events</h3></a>
-                                <p class="text-gray-600">Read about experiences taking part in the Pokemon TCG community and related events.</p>
+                                <a href="/blog/tags/event/"><h3 class="text-lg font-semibold mb-1 hover:opacity-70 transition duration-300" style="color: var(--ink); font-family:'Fraunces', serif;">Community Events</h3></a>
+                                <p class="text-sm" style="color: var(--stone);">Read about experiences taking part in the Pokémon TCG community and related events.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="bg-yellow-400 p-3 rounded-full mr-4">
-                                <a href="/blog/tags/history/">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <a href="/blog/tags/history/" class="w-11 h-11 flex-shrink-0 rounded-full flex items-center justify-center mr-4" style="background: var(--ink);">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--gold-bright);" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                </a>
-                            </div>
+                            </a>
                             <div>
-                                <a href="/blog/tags/history/"><h3 class="text-xl font-bold text-gray-800 mb-2 hover:text-yellow-400 transition duration-300">Pokémon TCG History</h3></a>
-                                <p class="text-gray-600">Explore the history and value of classic and rare cards from Base Set to elusive Japanese Promo's.</p>
+                                <a href="/blog/tags/history/"><h3 class="text-lg font-semibold mb-1 hover:opacity-70 transition duration-300" style="color: var(--ink); font-family:'Fraunces', serif;">Pokémon TCG History</h3></a>
+                                <p class="text-sm" style="color: var(--stone);">Explore the history and value of classic and rare cards from Base Set to elusive Japanese promos.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="bg-yellow-400 p-3 rounded-full mr-4">
-                                <a href="/blog/categories/research/">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <a href="/blog/categories/research/" class="w-11 h-11 flex-shrink-0 rounded-full flex items-center justify-center mr-4" style="background: var(--ink);">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--gold-bright);" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <circle stroke-linecap="round" stroke-linejoin="round" stroke-width="2" cx="11" cy="11" r="8" />
                                     <line stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" y1="21" x2="16.65" y2="16.65" />
                                 </svg>
-                                </a>
-                            </div>
+                            </a>
                             <div>
-                                <a href="/blog/categories/research/"><h3 class="text-xl font-bold text-gray-800 mb-2 hover:text-yellow-400 transition duration-300">Research & Insights</h3></a>
-                                <p class="text-gray-600">Stay informed and expand your collecting knowledge with the latest research.</p>
+                                <a href="/blog/categories/research/"><h3 class="text-lg font-semibold mb-1 hover:opacity-70 transition duration-300" style="color: var(--ink); font-family:'Fraunces', serif;">Research &amp; Insights</h3></a>
+                                <p class="text-sm" style="color: var(--stone);">Stay informed and expand your collecting knowledge with the latest research.</p>
                             </div>
                         </div>
                     </div>
-                    <a href="/blog/" class="inline-block mt-8 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
-                        Read The Blog
-                    </a>
+                    <a href="/blog/" class="inline-block mt-8 btn-ember py-3 px-8">Read The Blog</a>
                 </div>
                 <div class="md:w-1/3 md:pl-8">
-    <div class="blog-featured-card">
-        <img src="/blog/posts/grand-party-trainer/1.webp" alt="Blog Featured Image" class="w-full h-auto object-cover rounded-md">
-        <div class="p-4">
-            <div class="flex items-center mb-3">
-                <span class="bg-yellow-400 text-gray-800 text-xs font-bold px-3 py-1 rounded-full">Featured</span>
-                <span class="ml-3 text-gray-600 text-xs">October 06, 2025</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Grand Party Trainer</h3>
-            <p class="text-gray-600 text-sm mb-3">
-                Discover the story behind Japan’s exclusive Grand Party Trainer Certification Card.
-            </p>
-            <a href="/blog/posts/grand-party-trainer/" class="text-yellow-500 hover:text-yellow-600 font-bold text-sm flex items-center">
-                Read More
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-            </a>
-        </div>
-    </div>
-</div>
+                    <div class="blog-featured-card">
+                        <img src="/blog/posts/grand-party-trainer/1.webp" alt="Blog Featured Image" class="w-full h-48 md:h-56 object-cover">
+                        <div class="p-5">
+                            <div class="flex items-center mb-3">
+                                <span class="item-tag px-3 py-1 rounded-full" style="background: var(--ink); color: var(--gold-bright);">Featured</span>
+                                <span class="ml-3 mono text-xs" style="color: var(--stone);">October 06, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2" style="color: var(--ink); font-family:'Fraunces', serif;">Grand Party Trainer</h3>
+                            <p class="text-sm mb-3" style="color: var(--stone);">
+                                Discover the story behind Japan's exclusive Grand Party Trainer Certification Card.
+                            </p>
+                            <a href="/blog/posts/grand-party-trainer/" class="font-semibold text-sm flex items-center" style="color: var(--ember);">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
-<section class="py-16 bg-gradient-to-r from-yellow-400 to-yellow-500">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl md:text-4xl pokemon-font text-gray-800 mb-6">
-            Have a question?
-        </h2>
 
-        <p class="text-gray-800 mb-8 max-w-2xl mx-auto">
-            Ask anything about Pokémon cards using the form below!
-        </p>
+    <section class="py-14 md:py-20" style="background: var(--ink);">
+        <div class="container mx-auto px-6 text-center">
+            <p class="eyebrow mb-3" style="color: var(--gold-bright);">Ask The Vault</p>
+            <h2 class="text-3xl md:text-4xl mb-6" style="color: var(--parchment);">Have a question?</h2>
+            <p class="mb-8 max-w-2xl mx-auto" style="color: rgba(245,239,225,0.6);">
+                Ask anything about Pokémon cards using the form below!
+            </p>
 
-        <form action="https://api.web3forms.com/submit" method="POST" class="max-w-md mx-auto flex flex-col gap-4">
-            <input type="hidden" name="access_key" value="c95875d1-0638-42b9-bb95-696f8b3ed1fc">
+            <form action="https://api.web3forms.com/submit" method="POST" class="max-w-md mx-auto flex flex-col gap-4">
+                <input type="hidden" name="access_key" value="c95875d1-0638-42b9-bb95-696f8b3ed1fc">
+                <input type="hidden" name="subject" value="New Question from PokiPlanet">
+                <input type="hidden" name="redirect" value="https://pokiplanet.com/thank-you">
 
-            <input type="hidden" name="subject" value="New Question from PokiPlanet">
+                <input type="email" name="email" autocomplete="email" placeholder="Your email address" class="input-vault flex-grow px-4 py-3 rounded" style="background: var(--ink-2); color: var(--parchment); border: 1px solid rgba(245,239,225,0.15);" required>
 
-            <input type="hidden" name="redirect" value="https://pokiplanet.com/thank-you">
+                <textarea name="message" placeholder="Type your question here..." rows="4" class="input-vault flex-grow px-4 py-3 rounded resize-none" style="background: var(--ink-2); color: var(--parchment); border: 1px solid rgba(245,239,225,0.15);" required></textarea>
 
-            <input type="email" name="email" autocomplete="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-800" required>
+                <button type="submit" class="btn-foil py-3 px-8 whitespace-nowrap">Send Question</button>
+            </form>
+        </div>
+    </section>
 
-            <textarea name="message" placeholder="Type your question here..." rows="4" class="flex-grow px-4 py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-gray-800 resize-none" required></textarea>
-
-            <button type="submit" class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-8 rounded-full transition duration-300 whitespace-nowrap">Send Question</button>
-        </form>
-    </div>
-</section>
-    
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <footer class="pt-12 md:pt-16 pb-8" style="background: var(--ink); color: var(--parchment); border-top: 1px solid rgba(245,239,225,0.08);">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+                <div class="col-span-2 md:col-span-1">
                     <div class="flex items-center mb-6">
-                         <a href="https://pokiplanet.com" class="flex items-center">
-                            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center mr-3">
+                        <a href="https://pokiplanet.com" class="flex items-center">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-3 overflow-hidden">
                                 <img src="/assets/img/pokiplanet.webp" alt="PokiPlanet Logo">
                             </div>
-                            <h3 class="text-xl pokemon-font">PokiPlanet</h3>
+                            <h3 class="text-lg" style="font-family:'Fraunces', serif;">PokiPlanet</h3>
                         </a>
                     </div>
-                    <p class="text-gray-400 mb-4 text-sm">
-                        Your trusted source for premium Pokémon cards & TCG insights.
+                    <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.5);">
+                        Your trusted source for premium Pokémon cards &amp; TCG insights.
                     </p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4 text-yellow-400">Shop</h4>
+                    <h4 class="eyebrow mb-4" style="color: var(--gold-bright);">Shop</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=modern" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Modern Hits</a></li>
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=graded" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Graded Cards</a></li>
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=vintage" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Vintage Cards</a></li>
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=sealed" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Sealed Products</a></li>
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=japanese" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Japanese Imports</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=modern" target="_blank" rel="noopener noreferrer" class="footer-link">Modern Hits</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=graded" target="_blank" rel="noopener noreferrer" class="footer-link">Graded Cards</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=vintage" target="_blank" rel="noopener noreferrer" class="footer-link">Vintage Cards</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=sealed" target="_blank" rel="noopener noreferrer" class="footer-link">Sealed Products</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=japanese" target="_blank" rel="noopener noreferrer" class="footer-link">Japanese Imports</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4 text-yellow-400">Resources</h4>
+                    <h4 class="eyebrow mb-4" style="color: var(--gold-bright);">Resources</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="/blog" class="text-gray-400 hover:text-white transition duration-300">Blog Home</a></li>
-                        <li><a href="http://pkmncollectors.online/" class="text-gray-400 hover:text-white transition duration-300">Pokemon Collectors</a></li>
-                        <li><a href="/blog/posts/1st-edition-base-set-fakes/" class="text-gray-400 hover:text-white transition duration-300">Identify Fakes</a></li>
-                        <li><a href="https://www.psacard.com/gradingstandards" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Grading Guide (PSA)</a></li>
-                        <li><a href="https://resources.psacard.com/PSA-How-To-Submit.pdf" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Submission Guide (PSA)</a></li>
+                        <li><a href="/blog" class="footer-link">Blog Home</a></li>
+                        <li><a href="http://pkmncollectors.online/" class="footer-link">Pokemon Collectors</a></li>
+                        <li><a href="/blog/posts/1st-edition-base-set-fakes/" class="footer-link">Identify Fakes</a></li>
+                        <li><a href="https://www.psacard.com/gradingstandards" target="_blank" rel="noopener noreferrer" class="footer-link">Grading Guide (PSA)</a></li>
+                        <li><a href="https://resources.psacard.com/PSA-How-To-Submit.pdf" target="_blank" rel="noopener noreferrer" class="footer-link">Submission Guide (PSA)</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4 text-yellow-400">Website</h4>
+                    <h4 class="eyebrow mb-4" style="color: var(--gold-bright);">Website</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="/about/" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
-                        <li><a href="/about/#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
-                        <li><a href="/terms-of-service/#licence" class="text-gray-400 hover:text-white transition duration-300">License</a></li>
-                        <li><a href="/terms-of-service/#disclaimer" class="text-gray-400 hover:text-white transition duration-300">Disclaimer</a></li>
-                        <li><a href="/terms-of-service/#authenticity" class="text-gray-400 hover:text-white transition duration-300">Authenticity</a></li>
+                        <li><a href="/about/" class="footer-link">About</a></li>
+                        <li><a href="/about/#contact" class="footer-link">Contact</a></li>
+                        <li><a href="/terms-of-service/#license" class="footer-link">License</a></li>
+                        <li><a href="/terms-of-service/#disclaimer" class="footer-link">Disclaimer</a></li>
+                        <li><a href="/terms-of-service/#authenticity" class="footer-link">Authenticity</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-xs mb-4 md:mb-0">
-                    © <span id="footer-year">2026</span> PokiPlanet. All rights reserved. Pokémon and Pokémon character names are trademarks of Nintendo. Website design by <a href="https://ashley-booth.com" class="text-gray-400 hover:text-white transition duration-300">Ashley Booth.</a>
+            <div class="divider-line mt-12 mb-8"></div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-xs mb-4 md:mb-0" style="color: rgba(245,239,225,0.4);">
+                    © <span id="footer-year">2026</span> PokiPlanet. All rights reserved. Pokémon and Pokémon character names are trademarks of Nintendo.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="/privacy-policy/" class="text-gray-400 hover:text-white transition duration-300 text-xs">Privacy Policy</a>
-                    <a href="/terms-of-service/" class="text-gray-400 hover:text-white transition duration-300 text-xs">Terms of Service</a>
-                    <a href="/cookie-policy/" class="text-gray-400 hover:text-white transition duration-300 text-xs">Cookie Policy</a>
+                    <a href="https://ashley-booth.com" class="footer-link text-xs">Website design by Ashley Booth.</a>
+                    <a href="/privacy-policy/" class="footer-link text-xs">Privacy Policy</a>
+                    <a href="/terms-of-service/" class="footer-link text-xs">Terms of Service</a>
+                    <a href="/cookie-policy/" class="footer-link text-xs">Cookie Policy</a>
                 </div>
             </div>
         </div>
     </footer>
+
 <script>
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('menu');
@@ -690,22 +759,22 @@ menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('open');
 });
 
-const mobileLinks = mobileMenu.querySelectorAll('a[href^="#"]');
-mobileLinks.forEach(link => {
+const allNavLinks = document.querySelectorAll('header a[href^="#"]');
+allNavLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        
+
         menuBtn.classList.remove('open');
         mobileMenu.classList.remove('open');
-        
+
         const targetId = link.getAttribute('href');
         const targetSection = document.querySelector(targetId);
-        
+
         if (targetSection) {
             const headerHeight = document.querySelector('header').offsetHeight;
-            
+
             const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-            
+
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
@@ -760,12 +829,8 @@ const swiper2 = new Swiper('.testimonialSwiper', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        640: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        }
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
     }
 });
 
@@ -792,7 +857,7 @@ form.addEventListener("submit", async (e) => {
 
 function updateHeroBackground(type) {
     const heroSection = document.querySelector('.hero');
-    heroSection.className = `hero min-h-screen flex items-center justify-center relative overflow-hidden type-${type}`;
+    heroSection.className = `hero flex items-center justify-center relative overflow-hidden type-${type}`;
 }
 
 gsap.registerPlugin(ScrollTrigger);
@@ -812,14 +877,13 @@ gsap.from('.hero p', {
     ease: 'power3.out'
 });
 
-gsap.from('.swiper', {
+gsap.from('.slab-frame', {
     duration: 1,
     y: 50,
     opacity: 0,
     delay: 0.6,
     ease: 'power3.out'
 });
-
 
 gsap.utils.toArray('section').forEach(section => {
     if (section.id && section.id.length > 0) {
@@ -838,6 +902,6 @@ gsap.utils.toArray('section').forEach(section => {
 });
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();
-    </script>
+</script>
 </body>
 </html>

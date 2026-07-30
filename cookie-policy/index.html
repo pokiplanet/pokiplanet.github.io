@@ -4,105 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Policy - PokiPlanet</title>
-    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
         :root {
-            --primary-yellow: #f0d240;
-            --pokemon-blue: #3b4cca;
-            --pokemon-red: #ff0000;
-        }
-        
-        body {
-            font-family: 'Press Start 2P', cursive;
-            background-color: #f8f8f8;
-            overflow-x: hidden;
-        }
-        
-        .pokemon-font {
-            font-family: 'Pokemon Solid', sans-serif;
-            letter-spacing: 4px;
+            --ink: #14110f;
+            --ink-2: #1e1811;
+            --parchment: #f5efe1;
+            --parchment-2: #ece0c4;
+            --stone: #5b5346;
+            --ember: #b6402a;
+            --ember-dim: #8f3220;
+            --gold: #c99a3d;
+            --gold-bright: #e0b657;
+            --foil-teal: #74d1c4;
+            --foil-violet: #b28ce8;
+            --foil-pink: #ef9fc0;
         }
 
-        .hamburger {
-            cursor: pointer;
-            width: 24px;
-            height: 24px;
-            transition: all 0.25s;
-            position: relative;
-        }
-        
-        .hamburger-top,
-        .hamburger-middle,
-        .hamburger-bottom {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 24px;
-            height: 2px;
-            background: #000;
-            transform: rotate(0);
-            transition: all 0.5s;
-        }
-        
-        .hamburger-middle {
-            transform: translateY(7px);
-        }
-        
-        .hamburger-bottom {
-            transform: translateY(14px);
-        }
-        
-        .open .hamburger-top {
-            transform: rotate(45deg) translateY(6px) translate(6px);
-        }
-        
-        .open .hamburger-middle {
-            display: none;
-        }
-        
-        .open .hamburger-bottom {
-            transform: rotate(-45deg) translateY(6px) translate(-6px);
-        }
-        
-        .mobile-menu {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        
-        .mobile-menu.open {
-            max-height: 300px;
-        }
+        * { box-sizing: border-box; }
 
+        body { font-family: 'Inter', sans-serif; background-color: var(--parchment); color: var(--ink); overflow-x: hidden; }
+        html { scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Fraunces', serif; letter-spacing: -0.01em; }
+
+        .eyebrow { font-family: 'JetBrains Mono', monospace; letter-spacing: 0.22em; text-transform: uppercase; font-size: 0.68rem; font-weight: 500; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        header { background: var(--parchment); border-bottom: 1px solid rgba(20,17,15,0.08); }
+        .nav-link {
+            font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase;
+            color: var(--stone); position: relative; padding-bottom: 4px;
+        }
+        .nav-link::after { content:""; position:absolute; left:0; bottom:0; width:0%; height:1px; background:var(--ember); transition:width .3s ease; }
+        .nav-link:hover { color: var(--ink); }
+        .nav-link:hover::after { width: 100%; }
+
+        .footer-link { color: rgba(245,239,225,0.5); transition: color 0.3s ease; }
+        .footer-link:hover { color: #ffffff; }
+
+        .hamburger { cursor: pointer; width: 24px; height: 24px; transition: all 0.25s; position: relative; }
+        .hamburger-top, .hamburger-middle, .hamburger-bottom {
+            position: absolute; top: 0; left: 0; width: 24px; height: 2px; background: var(--ink); transform: rotate(0); transition: all 0.5s;
+        }
+        .hamburger-middle { transform: translateY(7px); }
+        .hamburger-bottom { transform: translateY(14px); }
+        .open .hamburger-top { transform: rotate(45deg) translateY(6px) translate(6px); }
+        .open .hamburger-middle { display: none; }
+        .open .hamburger-bottom { transform: rotate(-45deg) translateY(6px) translate(-6px); }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .mobile-menu.open { max-height: 300px; }
+
+        .doc-card { background: #ffffff; border: 1px solid rgba(20,17,15,0.08); border-radius: 6px; box-shadow: 0 25px 50px -25px rgba(20,17,15,0.25); overflow: hidden; }
+        .doc-top-bar { height: 4px; background: linear-gradient(90deg, var(--foil-teal), var(--foil-violet), var(--foil-pink), var(--gold-bright)); }
+        .divider-light { height: 1px; background: linear-gradient(90deg, transparent, rgba(20,17,15,0.15), transparent); margin: 2rem 0; border: none; }
+
+        .doc-body a { color: var(--ember); text-decoration: underline; text-underline-offset: 2px; }
+        .doc-body a:hover { color: var(--ember-dim); }
+        .doc-body p { color: var(--stone); margin-bottom: 1rem; line-height: 1.7; }
+        .doc-body li { color: var(--stone); margin-bottom: 0.6rem; line-height: 1.6; }
+        .doc-body h2 { color: var(--ink); font-size: 1.4rem; margin-bottom: 1rem; }
+        .doc-body b { color: var(--ink); }
+
+        .section-num {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--gold);
+            font-size: 0.95rem;
+            margin-right: 0.5rem;
+        }
     </style>
 </head>
 <body class="relative">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mr-3">
-                        <a href="https://pokiplanet.com">
-                        <img src="/assets/img/pokiplanet.webp">
-                    </div>
-                    <h1 class="text-2xl pokemon-font text-gray-800">PokiPlanet</h1>
-                        </a>
+                <div class="flex items-center min-w-0">
+                    <a href="https://pokiplanet.com" class="flex items-center min-w-0">
+                        <div class="w-9 h-9 sm:w-11 sm:h-11 bg-white border border-gray-200 rounded-full flex items-center justify-center mr-3 overflow-hidden flex-shrink-0">
+                            <img src="/assets/img/pokiplanet.webp" alt="PokiPlanet logo">
+                        </div>
+                        <div class="min-w-0">
+                            <h1 class="text-lg sm:text-xl font-semibold truncate" style="color: var(--ink); font-family:'Fraunces', serif;">PokiPlanet</h1>
+                            <p class="eyebrow hidden sm:block" style="color: var(--stone);">The Collector's Vault</p>
+                        </div>
+                    </a>
                 </div>
-                
-                <nav class="hidden md:flex space-x-8">
-                    <a href="https://www.ebay.co.uk/usr/pokiplanet" class="text-gray-800 hover:text-yellow-500 transition duration-300">Shop</a>
-                    <a href="https://pokiplanet.com/#reviews" class="text-gray-800 hover:text-yellow-500 transition duration-300">Reviews</a>
-                    <a href="https://pokiplanet.com/#blog" class="text-gray-800 hover:text-yellow-500 transition duration-300">Blog</a>
+
+                <nav class="hidden md:flex space-x-10 items-center">
+                    <a href="https://www.ebay.co.uk/usr/pokiplanet" class="nav-link">Shop</a>
+                    <a href="https://pokiplanet.com/#reviews" class="nav-link">Reviews</a>
+                    <a href="https://pokiplanet.com/#blog" class="nav-link">Blog</a>
                 </nav>
-                
+
                 <div class="md:hidden">
                     <button id="menu-btn" class="hamburger focus:outline-none">
                         <span class="hamburger-top"></span>
@@ -111,153 +110,142 @@
                     </button>
                 </div>
             </div>
-            
+
             <div id="menu" class="mobile-menu md:hidden">
-                <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
-                    <a href="https://pokiplanet.com/shop" class="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-yellow-400 rounded-md">Shop</a>
-                    <a href="https://pokiplanet.com/#reviews" class="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-yellow-400 rounded-md">Reviews</a>
-                    <a href="https://pokiplanet.com/#blog" class="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-yellow-400 rounded-md">Blog</a>
+                <div class="px-2 pt-4 pb-4 space-y-1 sm:px-3">
+                    <a href="https://pokiplanet.com/shop" class="nav-link block px-3 py-2">Shop</a>
+                    <a href="https://pokiplanet.com/#reviews" class="nav-link block px-3 py-2">Reviews</a>
+                    <a href="https://pokiplanet.com/#blog" class="nav-link block px-3 py-2">Blog</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="bg-gray-50 text-gray-800 px-4 py-10">
-        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-            <h1 class="text-3xl md:text-4xl pokemon-font text-yellow-600 mb-6">Cookie Policy</h1>
-    
-            <p class="mb-4">
-                This Cookie Policy explains how PokiPlanet uses cookies and similar technologies on our website. By visiting our site, you agree to the use of cookies as outlined below.
-            </p>
+    <div class="px-4 py-12 md:py-16">
+        <div class="max-w-3xl mx-auto doc-card">
+            <div class="doc-top-bar"></div>
+            <div class="p-8 md:p-10 doc-body">
+                <p class="eyebrow mb-3" style="color: var(--ember);">Page — Legal</p>
+                <h1 class="text-3xl md:text-4xl mb-6" style="color: var(--ink);">Cookie Policy</h1>
 
-            <hr class="my-8 border-gray-300">
-    
-            <h2 class="text-2xl text-gray-900 mb-4">1. What Are Cookies?</h2>
-            <p class="mb-4">
-                Cookies are small text files that are placed on your device when you visit a website. They help websites remember your actions or preferences over time.
-            </p>
+                <p>This Cookie Policy explains how PokiPlanet uses cookies and similar technologies on our website. By visiting our site, you agree to the use of cookies as outlined below.</p>
 
-            <hr class="my-8 border-gray-300">
-    
-            <h2 class="text-2xl text-gray-900 mb-4">2. Types of Cookies We Use</h2>
-            <p class="mb-4">
-                We use the following types of cookies on our site:
-            </p>
-            <ul class="list-inside list-disc mb-4">
-                <li><b>Essential Cookies:</b> These are necessary for the basic functionality of the website. Without these cookies, the site wouldn't work as intended.</li>
-                <li><b>Analytics Cookies:</b> We use tools like Google Analytics to track user activity on the site, which helps us understand how visitors interact with our content and improve user experience.</li>
-                <li><b>External Website Links:</b> Some links on our website lead to third-party sites, such as eBay and PSAcard.com. These sites may set cookies on your device when you visit them, but we have no control over their cookie policies.</li>
-            </ul>
+                <hr class="divider-light">
 
-            <hr class="my-8 border-gray-300">
-    
-            <h2 class="text-2xl text-gray-900 mb-4">3. How to Control Cookies</h2>
-            <p class="mb-4">
-                You can control how cookies are stored on your device by adjusting your browser settings. Most browsers allow you to block cookies, delete them, or notify you when a cookie is being set.
-            </p>
-            <p class="mb-4">
-                If you choose to disable cookies, some features of our site may not work properly. You can learn more about how to manage cookies through the settings in your browser.
-            </p>
+                <h2><span class="section-num">01</span>What Are Cookies?</h2>
+                <p>Cookies are small text files that are placed on your device when you visit a website. They help websites remember your actions or preferences over time.</p>
 
-            <hr class="my-8 border-gray-300">
-    
-            <h2 class="text-2xl text-gray-900 mb-4">4. Links to Third-Party Websites</h2>
-            <p class="mb-4">
-                Our website contains links to external websites such as eBay and PSAcard.com. These sites may also use cookies to collect information. We recommend reviewing their cookie and privacy policies before interacting with their content.
-            </p>
+                <hr class="divider-light">
 
-            <hr class="my-8 border-gray-300">
-    
-            <h2 class="text-2xl text-gray-900 mb-4">5. Changes to This Cookie Policy</h2>
-            <p class="mb-4">
-                We may update this Cookie Policy from time to time. Any changes will be reflected on this page, and the "Last Updated" date at the bottom will be updated accordingly.
-            </p>
+                <h2><span class="section-num">02</span>Types of Cookies We Use</h2>
+                <p>We use the following types of cookies on our site:</p>
+                <ul class="list-inside list-disc mb-2">
+                    <li><b>Essential Cookies:</b> These are necessary for the basic functionality of the website. Without these cookies, the site wouldn't work as intended.</li>
+                    <li><b>Analytics Cookies:</b> We use tools like Google Analytics to track user activity on the site, which helps us understand how visitors interact with our content and improve user experience.</li>
+                    <li><b>External Website Links:</b> Some links on our website lead to third-party sites, such as eBay and PSAcard.com. These sites may set cookies on your device when you visit them, but we have no control over their cookie policies.</li>
+                </ul>
 
-            <hr class="my-8 border-gray-300">
-    
-            <h2 class="text-2xl text-gray-900 mb-4">6. Contact Us</h2>
-            <p class="mb-4">
-                If you have any questions about this Cookie Policy, please feel free to contact us at:
-            </p>
-            <p class="mb-4">
-                Email: <a href="mailto:info@pokiplanet.com" class="text-yellow-600">info@pokiplanet.com</a>
-            </p>
+                <hr class="divider-light">
 
-            <hr class="my-8 border-gray-300">
-    
-            <footer class="mt-8 text-center text-gray-600">
-                <p class="text-sm">Last Updated: April 2025</p>
-            </footer>
+                <h2><span class="section-num">03</span>How to Control Cookies</h2>
+                <p>You can control how cookies are stored on your device by adjusting your browser settings. Most browsers allow you to block cookies, delete them, or notify you when a cookie is being set.</p>
+                <p>If you choose to disable cookies, some features of our site may not work properly. You can learn more about how to manage cookies through the settings in your browser.</p>
+
+                <hr class="divider-light">
+
+                <h2><span class="section-num">04</span>Links to Third-Party Websites</h2>
+                <p>Our website contains links to external websites such as eBay and PSAcard.com. These sites may also use cookies to collect information. We recommend reviewing their cookie and privacy policies before interacting with their content.</p>
+
+                <hr class="divider-light">
+
+                <h2><span class="section-num">05</span>Changes to This Cookie Policy</h2>
+                <p>We may update this Cookie Policy from time to time. Any changes will be reflected on this page, and the "Last Updated" date at the bottom will be updated accordingly.</p>
+
+                <hr class="divider-light">
+
+                <h2><span class="section-num">06</span>Contact Us</h2>
+                <p>If you have any questions about this Cookie Policy, please feel free to contact us at:</p>
+                <p>Email: <a href="mailto:info@pokiplanet.com">info@pokiplanet.com</a></p>
+
+                <hr class="divider-light">
+
+                <p class="mono text-xs text-center" style="color: var(--stone);">Last Updated: June 2026</p>
+            </div>
         </div>
     </div>
 
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <footer class="pt-16 pb-8" style="background: var(--ink); color: var(--parchment);">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+                <div class="col-span-2 md:col-span-1">
                     <div class="flex items-center mb-6">
                          <a href="https://pokiplanet.com" class="flex items-center">
-                            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center mr-3">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-3 overflow-hidden">
                                 <img src="/assets/img/pokiplanet.webp" alt="PokiPlanet Logo">
                             </div>
-                            <h3 class="text-xl pokemon-font">PokiPlanet</h3>
+                            <h3 class="text-lg" style="font-family:'Fraunces', serif;">PokiPlanet</h3>
                         </a>
                     </div>
-                    <p class="text-gray-400 mb-4 text-sm">
-                        Your trusted source for premium Pokémon cards & TCG insights.
+                    <p class="mb-4 text-sm" style="color: rgba(245,239,225,0.5);">
+                        Your trusted source for premium Pokémon cards &amp; TCG insights.
                     </p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4 text-yellow-400">Shop</h4>
+                    <h4 class="eyebrow mb-4" style="color: var(--gold-bright);">Shop</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=modern" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Modern Hits</a></li>
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=graded" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Graded Cards</a></li>
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=vintage" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Vintage Cards</a></li>
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=sealed" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Sealed Products</a></li>
-                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=japanese" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Japanese Imports</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=modern" target="_blank" rel="noopener noreferrer" class="footer-link">Modern Hits</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=graded" target="_blank" rel="noopener noreferrer" class="footer-link">Graded Cards</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=vintage" target="_blank" rel="noopener noreferrer" class="footer-link">Vintage Cards</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=sealed" target="_blank" rel="noopener noreferrer" class="footer-link">Sealed Products</a></li>
+                        <li><a href="https://www.ebay.co.uk/sch/i.html?_ssn=pokiplanet&_nkw=japanese" target="_blank" rel="noopener noreferrer" class="footer-link">Japanese Imports</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4 text-yellow-400">Resources</h4>
+                    <h4 class="eyebrow mb-4" style="color: var(--gold-bright);">Resources</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="/blog" class="text-gray-400 hover:text-white transition duration-300">Blog Home</a></li>
-                        <li><a href="/blog/posts/collection/" class="text-gray-400 hover:text-white transition duration-300">My Collection</a></li>
-                        <li><a href="/blog/posts/1st-edition-base-set-fakes/" class="text-gray-400 hover:text-white transition duration-300">Identify Fakes</a></li>
-                        <li><a href="https://www.psacard.com/gradingstandards" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Grading Guide (PSA)</a></li>
-                        <li><a href="https://resources.psacard.com/PSA-How-To-Submit.pdf" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">Submission Guide (PSA)</a></li>
+                        <li><a href="/blog" class="footer-link">Blog Home</a></li>
+                        <li><a href="/blog/posts/collection/" class="footer-link">My Collection</a></li>
+                        <li><a href="/blog/posts/1st-edition-base-set-fakes/" class="footer-link">Identify Fakes</a></li>
+                        <li><a href="https://www.psacard.com/gradingstandards" target="_blank" rel="noopener noreferrer" class="footer-link">Grading Guide (PSA)</a></li>
+                        <li><a href="https://resources.psacard.com/PSA-How-To-Submit.pdf" target="_blank" rel="noopener noreferrer" class="footer-link">Submission Guide (PSA)</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4 text-yellow-400">Website</h4>
+                    <h4 class="eyebrow mb-4" style="color: var(--gold-bright);">Website</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="/about/" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
-                        <li><a href="/about/#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
-                        <li><a href="/terms-of-service/#licence" class="text-gray-400 hover:text-white transition duration-300">License</a></li>
-                        <li><a href="/terms-of-service/#disclaimer" class="text-gray-400 hover:text-white transition duration-300">Disclaimer</a></li>
-                        <li><a href="/terms-of-service/#authenticity" class="text-gray-400 hover:text-white transition duration-300">Authenticity</a></li>
+                        <li><a href="/about/" class="footer-link">About</a></li>
+                        <li><a href="/about/#contact" class="footer-link">Contact</a></li>
+                        <li><a href="/terms-of-service/#license" class="footer-link">License</a></li>
+                        <li><a href="/terms-of-service/#disclaimer" class="footer-link">Disclaimer</a></li>
+                        <li><a href="/terms-of-service/#authenticity" class="footer-link">Authenticity</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-xs mb-4 md:mb-0">
-                    © <span id="footer-year">2026</span> PokiPlanet. All rights reserved. Pokémon and Pokémon character names are trademarks of Nintendo. Website design by <a href="https://ashley-booth.com" class="text-gray-400 hover:text-white transition duration-300">Ashley Booth.</a>
+            <div class="divider-line mt-12 mb-8" style="height:1px; background: linear-gradient(90deg, transparent, rgba(245,239,225,0.2), transparent);"></div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-xs mb-4 md:mb-0" style="color: rgba(245,239,225,0.4);">
+                    © <span id="footer-year">2026</span> PokiPlanet. All rights reserved. Pokémon and Pokémon character names are trademarks of Nintendo.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="/privacy-policy/" class="text-gray-400 hover:text-white transition duration-300 text-xs">Privacy Policy</a>
-                    <a href="/terms-of-service/" class="text-gray-400 hover:text-white transition duration-300 text-xs">Terms of Service</a>
-                    <a href="/cookie-policy/" class="text-gray-400 hover:text-white transition duration-300 text-xs">Cookie Policy</a>
+                    <a href="https://ashley-booth.com" class="footer-link text-xs">Website design by Ashley Booth.</a>
+                    <a href="/privacy-policy/" class="footer-link text-xs">Privacy Policy</a>
+                    <a href="/terms-of-service/" class="footer-link text-xs">Terms of Service</a>
+                    <a href="/cookie-policy/" class="footer-link text-xs">Cookie Policy</a>
                 </div>
             </div>
         </div>
     </footer>
+
 <script>
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('menu');
-    
+
     menuBtn.addEventListener('click', () => {
         menuBtn.classList.toggle('open');
         mobileMenu.classList.toggle('open');
     });
+
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
