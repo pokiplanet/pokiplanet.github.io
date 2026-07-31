@@ -211,6 +211,21 @@
         mobileMenu.classList.toggle('open');
     });
 
+    document.addEventListener("DOMContentLoaded", () => {
+        const hash = window.location.hash;
+
+        if (hash) {
+          setTimeout(() => {
+            const target = document.querySelector(hash);
+            if (target) {
+              const offset = 100;
+              const topPos = target.getBoundingClientRect().top + window.scrollY - offset;
+              window.scrollTo({ top: topPos, behavior: 'smooth' });
+            }
+          }, 100);
+        }
+    });
+
     document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
 </body>

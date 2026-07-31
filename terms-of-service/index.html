@@ -131,9 +131,9 @@
             <p>
                 By accessing and using PokiPlanet, you agree to the following terms of service. Please read them carefully before using our website.
             </p>
-                <hr id="disclaimer" class="divider-light">
+                <hr class="divider-light">
 
-            <h2><span class="section-num">01</span>Disclaimer</h2>
+            <h2 id="disclaimer"><span class="section-num">01</span>Disclaimer</h2>
             <p>
             Pokémon and all related properties are © Nintendo, Creatures, and GAME FREAK.
             </p>
@@ -144,9 +144,9 @@
                 All product names, logos, and brands are the property of their respective owners.
             </p>
 
-                <hr id="license" class="divider-light">
+                <hr class="divider-light">
 
-                <h2><span class="section-num">02</span>Content Usage</h2>
+                <h2 id="license"><span class="section-num">02</span>Content Usage</h2>
             <p>
                 All original content on PokiPlanet is licensed under a <b>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</b>.
             </p>
@@ -167,9 +167,9 @@
                 Any product names, logos, or brands mentioned are used for identification purposes only and do not imply endorsement.
             </p>
 
-                <hr id="authenticity" class="divider-light">
+                <hr class="divider-light">
 
-                <h2><span class="section-num">04</span>Purchases and Authenticity</h2>
+                <h2 id="authenticity"><span class="section-num">04</span>Purchases and Authenticity</h2>
                 <p>
                 PokiPlanet guarantees the authenticity of all items sold through the site. However, due to the nature of collectible markets, all sales are final unless stated otherwise.
             </p>
@@ -268,6 +268,21 @@
     menuBtn.addEventListener('click', () => {
         menuBtn.classList.toggle('open');
         mobileMenu.classList.toggle('open');
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const hash = window.location.hash;
+
+        if (hash) {
+          setTimeout(() => {
+            const target = document.querySelector(hash);
+            if (target) {
+              const offset = 100;
+              const topPos = target.getBoundingClientRect().top + window.scrollY - offset;
+              window.scrollTo({ top: topPos, behavior: 'smooth' });
+            }
+          }, 100);
+        }
     });
 
     document.getElementById('footer-year').textContent = new Date().getFullYear();
