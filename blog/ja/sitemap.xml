@@ -3,8 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/e4-signature-exchange-2026/</loc>
+    <lastmod>2026-09-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/e4-signature-exchange-2026/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/e4-signature-exchange-2026/"
+    />
+  </url>
+  <url>
     <loc>https://pokiplanet.com/blog/ja/posts/</loc>
-    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -16,6 +32,22 @@
       rel="alternate"
       hreflang="ja"
       href="https://pokiplanet.com/blog/ja/posts/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/</loc>
+    <lastmod>2026-09-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/"
     />
   </url>
   <url>
@@ -32,22 +64,6 @@
       rel="alternate"
       hreflang="ja"
       href="https://pokiplanet.com/blog/ja/posts/hoppip-and-pichu-trade/"
-    />
-  </url>
-  <url>
-    <loc>https://pokiplanet.com/blog/ja/</loc>
-    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://pokiplanet.com/blog/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://pokiplanet.com/blog/ja/"
     />
   </url>
   <url>
