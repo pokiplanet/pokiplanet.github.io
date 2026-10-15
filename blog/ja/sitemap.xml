@@ -3,24 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://pokiplanet.com/blog/ja/posts/e4-art-contest-2026/</loc>
-    <lastmod>2026-10-07T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://pokiplanet.com/blog/posts/e4-art-contest-2026/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://pokiplanet.com/blog/ja/posts/e4-art-contest-2026/"
-    />
-  </url>
-  <url>
     <loc>https://pokiplanet.com/blog/ja/posts/</loc>
-    <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -36,7 +20,7 @@
   </url>
   <url>
     <loc>https://pokiplanet.com/blog/ja/</loc>
-    <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -48,6 +32,38 @@
       rel="alternate"
       hreflang="ja"
       href="https://pokiplanet.com/blog/ja/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/simipour-can-you-name-all-pokemon-bw-cd/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/simipour-can-you-name-all-pokemon-bw-cd/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/simipour-can-you-name-all-pokemon-bw-cd/"
+    />
+  </url>
+  <url>
+    <loc>https://pokiplanet.com/blog/ja/posts/e4-art-contest-2026/</loc>
+    <lastmod>2026-10-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/e4-art-contest-2026/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/e4-art-contest-2026/"
     />
   </url>
   <url>
