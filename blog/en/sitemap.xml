@@ -7,6 +7,16 @@
     <lastmod>2026-10-16T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://pokiplanet.com/blog/ja/posts/advent-of-arceus-release-prize-mothim/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pokiplanet.com/blog/posts/advent-of-arceus-release-prize-mothim/"
+    />
   </url>
   <url>
     <loc>https://pokiplanet.com/blog/</loc>
